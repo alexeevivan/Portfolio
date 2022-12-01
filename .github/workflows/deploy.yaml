@@ -10,9 +10,9 @@ jobs:
             -   name: Deploy Portfolio Web-Site
                 uses: alexeevivan/ssh-action@v.0.1.2
                 with:
-                    host: ${{secrets.SSH_HOST}}
-                    key: ${{secrets.SSH_KEY}}
-                    username: ${{secrets.SSH_USERNAME}}
+                    host: ${{ secrets.SSH_HOST }}
+                    key: ${{ secrets.SSH_KEY }}
+                    username: ${{ secrets.SSH_USERNAME }}
 
                     script:
                         mkdir test #create folder u want to deploy to in the live server
