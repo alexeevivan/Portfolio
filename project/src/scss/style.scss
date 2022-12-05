@@ -1,0 +1,188 @@
+@import "null";
+
+// ================================================================================================
+// Variables
+// ================================================================================================
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1400px;
+$maxWidthMobileViewContainer: 767px;
+// ================================================================================================
+// Breakpoints
+// ================================================================================================
+// $md1: math.div($maxWidthContainer, 16) + em; // PC, laptops & some tablets in landscape mode
+$md1: 1400; // PC, laptops & some tablets in landscape mode
+$md2: 991.98; // Tablets & some phones in landscape mode
+$md3: 767.98; // Phones L
+$md4: 479.98; // Phones S
+// ================================================================================================
+// Font main color
+// ================================================================================================
+$mainColor: #000;
+// ================================================================================================
+// Secondary color
+// ================================================================================================
+$secondaryColor: #0156ff;
+// ================================================================================================
+// Additional background color
+// ================================================================================================
+$lightBgColor: #f5f7ff;
+// ================================================================================================
+// Most common grey color
+// ================================================================================================
+$projectGreyColor: #cacdd8;
+
+// ================================================================================================
+// PC-styling
+// ================================================================================================
+body {
+	background-color: #fff;
+	height: 100%;
+}
+
+.wrapper {
+	min-height: auto;
+
+	.orb {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		position: absolute;
+
+		.orb__item {
+			animation: orbAnimation 1s linear infinite;
+			animation-play-state: paused;
+			animation-delay: calc(var(--scroll) * -1s);
+			animation-iteration-count: 1;
+			animation-fill-mode: both;
+			width: 45vw;
+			height: 45vw;
+			border-radius: 40%;
+			border: 2px solid #000;
+			transform: translateX(-20vw);
+		}
+
+		h1 {
+			animation: h1Animation 1s linear infinite;
+			animation-play-state: paused;
+			animation-delay: calc(var(--scroll) * -1s);
+			animation-iteration-count: 1;
+			animation-fill-mode: both;
+			color: #fff;
+			position: absolute;
+			font-size: 10vw;
+			margin: 0;
+		}
+	}
+
+	.glow {
+		width: 220px;
+		height: 200px;
+		position: absolute;
+		border: 20px solid #ffffff;
+		border-radius: 300px;
+		filter: blur(10px);
+		left: calc(50% - 110px);
+		top: 2.5%;
+		box-sizing: border-box;
+	}
+
+	.box {
+		.wave {
+			opacity: .7;
+			position: absolute;
+			top: 2.5%;
+			left: calc(50% - 100px);
+			background: rgba(255, 255, 255);
+			width: 200px;
+			height: 200px;
+			margin-left: auto;
+			margin-top: auto;
+			transform-origin: 50% 48%;
+			border-radius: 43%;
+			-webkit-animation: drift 3000ms infinite linear;
+			animation: drift 3000ms infinite linear;
+
+			&.-three {
+				-webkit-animation: drift 5000ms infinite linear;
+				animation: drift 5000ms infinite linear;
+			}
+
+			&.-two {
+				-webkit-animation: drift 7000ms infinite linear;
+				animation: drift 7000ms infinite linear;
+				opacity: 0.1;
+				background: #fff;
+			}
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.5));
+			z-index: 11;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	@-webkit-keyframes drift {
+		from {
+			transform: rotate(0deg);
+		}
+
+		from {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes drift {
+		from {
+			transform: rotate(0deg);
+		}
+
+		from {
+			transform: rotate(360deg);
+		}
+	}
+
+	.intro {
+		height: 100vh;
+		width: auto;
+		background-size: 100% 100%;
+		background-position: 0px 0px;
+		background-image: conic-gradient(from 180deg at 50% 80%, #090E16 0%, #E40037 100%);
+	}
+
+	.projects {
+		height: 100vh;
+		width: auto;
+		background-size: 100% 100%;
+		background-position: 0px 0px;
+		background-image: conic-gradient(from 0deg at 50% 20%, #332460 0%, #090E16 100%);
+	}
+}
+
+@keyframes h1Animation {
+	to {
+		transform: translateY(20vh);
+	}
+}
+
+@keyframes orbAnimation {
+	to {
+		transform: translateY(50vh) rotate(360deg);
+		border-radius: 15%;
+		opacity: 0;
+	}
+}
+
+// ================================================================================================
+// Media Queries
+// ================================================================================================
+@media (min-width: 479.98px) and (max-width: 767.98px) {}
+
+@media (min-width: 320px) and (max-width: 479.98px) {}
