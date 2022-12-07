@@ -1,4 +1,6 @@
 @import "null";
+@import "loader";
+@import "fonts";
 
 // ================================================================================================
 // Variables
@@ -18,30 +20,148 @@ $md4: 479.98; // Phones S
 // ================================================================================================
 // Font main color
 // ================================================================================================
-$mainColor: #000;
+$mainColor: #17181D;
 // ================================================================================================
 // Secondary color
 // ================================================================================================
-$secondaryColor: #0156ff;
+$secondaryColor: #bb2649;
 // ================================================================================================
 // Additional background color
 // ================================================================================================
-$lightBgColor: #f5f7ff;
+$lightBgColor: #9B9B9B;
 // ================================================================================================
 // Most common grey color
 // ================================================================================================
-$projectGreyColor: #cacdd8;
+$borderColor: #F3F0F1;
 
 // ================================================================================================
 // PC-styling
 // ================================================================================================
 body {
-	background-color: #fff;
+	background-color: $mainColor;
 	height: 100%;
 }
 
 .wrapper {
 	min-height: auto;
+
+	.intro {
+		height: 100vh;
+		width: auto;
+		background-size: 100% 100%;
+		background-position: 0px 0px;
+		background-image: conic-gradient(from 180deg at 50% 80%, #090E16 0%, $secondaryColor 100%);
+
+		header {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			width: calc(100% - 10%);
+			margin: 0 auto;
+			height: 250px;
+
+			.header__left-side {
+				height: calc(100% - 50px);
+				width: 25%;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+
+				nav {
+					position: relative;
+					display: flex;
+					align-items: center;
+					width: 100%;
+					height: 75px;
+					border-radius: 10px;
+					background: rgba(255, 255, 255, 0);
+					border-radius: 16px;
+					box-shadow: inset 1px 1px 3px $mainColor;
+					backdrop-filter: blur(10.2px);
+					-webkit-backdrop-filter: blur(10.2px);
+					border: 2px solid $borderColor;
+					overflow: hidden;
+					color: #fff;
+
+					ul {
+						display: flex;
+						width: 100%;
+						justify-content: space-around;
+						align-items: center;
+
+						li {
+							display: inline;
+
+							a {
+								color: $lightBgColor;
+								font-size: 16px;
+								line-height: 24px;
+
+								&.active {
+									color: #fff;
+
+									&::after {
+										content: "";
+										display: block;
+										height: 2px;
+										width: 100%;
+										background-color: $secondaryColor;
+										border-radius: 50px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.header__right-side {
+				height: calc(100% - 50px);
+				width: 25%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+
+				.github,
+				.linkedin {
+					transition: .6s;
+
+					a {
+						img {
+							width: 75px;
+							height: 75px;
+						}
+					}
+
+					&:hover {
+						filter: drop-shadow(2px 4px 6px $mainColor);
+					}
+				}
+			}
+		}
+	}
+
+	.logo {
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		left: calc(50% - 100px);
+		top: 2.5%;
+
+		img {
+			display: block;
+			height: auto;
+			width: auto;
+			cursor: pointer;
+			transition: 1s;
+
+			&:hover {
+				filter: invert(1) drop-shadow(2px 4px 60px $lightBgColor);
+			}
+		}
+	}
 
 	.orb {
 		display: flex;
@@ -116,6 +236,14 @@ body {
 			}
 		}
 
+		h2 {
+			position: absolute;
+			color: $mainColor;
+			font-size: 50px;
+			top: calc(2.5% + 75px);
+			left: calc(50% - 25px);
+		}
+
 		&:after {
 			content: "";
 			display: block;
@@ -149,20 +277,12 @@ body {
 		}
 	}
 
-	.intro {
-		height: 100vh;
-		width: auto;
-		background-size: 100% 100%;
-		background-position: 0px 0px;
-		background-image: conic-gradient(from 180deg at 50% 80%, #090E16 0%, #E40037 100%);
-	}
-
 	.projects {
 		height: 100vh;
 		width: auto;
 		background-size: 100% 100%;
 		background-position: 0px 0px;
-		background-image: conic-gradient(from 0deg at 50% 20%, #332460 0%, #090E16 100%);
+		background-image: conic-gradient(from 0deg at 50% 20%, $secondaryColor 0%, #090E16 100%);
 	}
 }
 

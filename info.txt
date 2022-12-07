@@ -1,0 +1,4 @@
+При неверной выгрузке шрифтов (не в dist/build/fonts, а просто в dist/build):
+	открываем node_modules/gulp-fonter/dist/index.js, находим строку:
+		newFont.path = source.dirname + '\\' + source.stem + '.' + type;
+	меняем '\\' на '/', и должно заработать.

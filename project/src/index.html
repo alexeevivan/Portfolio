@@ -6,19 +6,29 @@
 
 <body>
 	<div class="wrapper">
-		@@include('html/header.html',{})
-		<!-- <section class="orb">
+		<section class="intro">
+			@@include('html/header.html',{})
+			<!-- @@include('html/loader.html',{}) -->
+			<div id="loading"></div>
+			<!-- <section class="orb">
 			<div class="orb__item"></div>
 		</section> -->
-		<div class="glow"></div>
-		<div class='box'>
-			<div class='wave -one'></div>
-			<div class='wave -two'></div>
-			<div class='wave -three'></div>
-		</div>
-		<section class="intro"></section>
+			<div class="glow"></div>
+			<div class="box">
+				<div class="wave -one"></div>
+				<div class="wave -two"></div>
+				<div class="wave -three"></div>
+				<!-- <h2>
+				IA
+			</h2> -->
+			</div>
+			<div class="logo">
+				<img src="img/svg/logo.svg" alt="logo">
+			</div>
+		</section>
 		<section class="projects"></section>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
 	<script src="js/app.min.js"></script>
 
 </body>
