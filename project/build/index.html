@@ -30,8 +30,8 @@
 	<meta name="Copyright" content="Alexeev Ivan">
 	<meta name="Address" content="">
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20221207091207" type="text/css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221207091207" type="text/css" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20221208164245" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221208164245" type="text/css" />
 
 	<title>
 		Ivan Alexeev
@@ -40,6 +40,11 @@
 
 <body>
 	<div class="wrapper">
+		<div class="progress-wrap">
+			<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+				<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+			</svg>
+		</div>
 		<section class="intro">
 			<header class="header">
 	<div class="header__left-side">
@@ -47,11 +52,6 @@
 			<ul>
 				<li>
 					<a href="#" class="active">
-						Home
-					</a>
-				</li>
-				<li>
-					<a href="#">
 						About
 					</a>
 				</li>
@@ -71,6 +71,15 @@
 			</div>
 		</nav>
 	</div>
+	<div class="glow"></div>
+	<div class="box">
+		<div class="wave -one"></div>
+		<div class="wave -two"></div>
+		<div class="wave -three"></div>
+	</div>
+	<div class="logo">
+		<img src="img/svg/logo.svg" alt="logo">
+	</div>
 	<div class="header__right-side">
 		<div class="github">
 			<a href="https://github.com/alexeevivan" target="_blank" rel="noopener noreferrer">
@@ -87,25 +96,121 @@
 			
 			<div id="loading"></div>
 			<!-- <section class="orb">
-			<div class="orb__item"></div>
-		</section> -->
-			<div class="glow"></div>
-			<div class="box">
-				<div class="wave -one"></div>
-				<div class="wave -two"></div>
-				<div class="wave -three"></div>
-				<!-- <h2>
-				IA
-			</h2> -->
-			</div>
-			<div class="logo">
-				<img src="img/svg/logo.svg" alt="logo">
+				<div class="orb__item"></div>
+			</section> -->
+			<div class="container">
+				<div class="container__content">
+					<div class="container__item-1">
+						<div class="slide-bar" id="slidebar">
+							<div class="bar" id="bar"></div>
+						</div>
+						<div class="text-block" id="textone">
+							<h1>
+								It'll be no longer impossible
+							</h1>
+						</div>
+						<div class="text-block" id="texttwo">
+							<h1>
+								Since I will make it possible
+							</h1>
+						</div>
+					</div>
+					<div class="container__item-2">
+						<button id="changeBtn">&nbsp;</button>
+					</div>
+				</div>
+				<div class="container__experience">
+					<div class="container__experience-block">
+						<div class="container__header">
+							<picture><source srcset="img/development.webp" type="image/webp"><img src="img/development.png" alt="development picture"></picture>
+							<div class="vector-line _item-1"></div>
+							<div class="vector-line _item-2"></div>
+							<div class="vector-line _item-3"></div>
+							<span>
+								It is clear
+							</span>
+							<h1>
+								Principles
+							</h1>
+						</div>
+						<div class="container__description">
+							<div class="container__block">
+								<div class="container__icon">
+									<div class="icon-frame _item-1"></div>
+									<div class="icon-frame _item-2"></div>
+									<span>
+										Money saving
+									</span>
+								</div>
+								<div class="container__text">
+									<span>
+										I efficiently develop adaptive layout based on layouts for PC, which
+										significantly
+										saves your budget and does not
+										require ordering additional design layouts.
+									</span>
+								</div>
+							</div>
+							<div class="container__block">
+								<div class="container__icon">
+									<div class="icon-frame _item-1"></div>
+									<div class="icon-frame _item-2"></div>
+									<span>
+										Reusable code
+									</span>
+								</div>
+								<div class="container__text">
+									<span>
+										Requests, wishes and improvements of a non-structural nature are already
+										included in
+										the cost of the work without unnecessary disputes and additional costs!
+									</span>
+								</div>
+							</div>
+							<div class="container__block">
+								<div class="container__icon">
+									<div class="icon-frame _item-1"></div>
+									<div class="icon-frame _item-2"></div>
+									<span>
+										Reputation
+									</span>
+								</div>
+								<div class="container__text">
+									<ul>
+										<li>
+											Ready to start already &amp; always in touch
+										</li>
+										<li>
+											I always finish the job &amp; don't break deadlines
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="container__block">
+								<div class="container__icon">
+									<div class="icon-frame _item-1"></div>
+									<div class="icon-frame _item-2"></div>
+									<span>
+										Know my client
+									</span>
+								</div>
+								<div class="container__text">
+									<span>
+										Start with client needs. Focus on client outcomes and design with data. Minimum
+										questions, maximum results.
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="projects"></section>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20221207091207"> </script>
-	<script src="js/app.min.js?_v=20221207091207"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js?_v=20221208164245"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20221208164245"> </script>
+	<script src="js/app.min.js?_v=20221208164245"></script>
 
 </body>
 

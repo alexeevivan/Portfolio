@@ -2,9 +2,12 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
+	box-sizing: border-box;
 }
 
 :root {
+	--light: #F3F0F1;
+	--dark: #17181D;
 	font-size: 100%;
 }
 
