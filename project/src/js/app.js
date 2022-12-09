@@ -41,11 +41,11 @@ changeBtn.addEventListener('click', (e) => changeColor());
 function changeColor() {
 	mode = !mode;
 	if (mode) {
-		root.style.setProperty('--light', blackColor);
-		root.style.setProperty('--dark', whiteColor);
+		root.style.setProperty('--light-to-switch', blackColor);
+		root.style.setProperty('--dark-to-switch', whiteColor);
 	} else {
-		root.style.setProperty('--light', whiteColor);
-		root.style.setProperty('--dark', blackColor);
+		root.style.setProperty('--light-to-switch', whiteColor);
+		root.style.setProperty('--dark-to-switch', blackColor);
 	}
 }
 
