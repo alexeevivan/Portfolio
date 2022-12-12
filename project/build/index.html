@@ -30,8 +30,8 @@
 	<meta name="Copyright" content="Alexeev Ivan">
 	<meta name="Address" content="">
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20221212173307" type="text/css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221212173307" type="text/css" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20221213013339" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221213013339" type="text/css" />
 
 	<title>
 		Ivan Alexeev
@@ -45,23 +45,23 @@
 				<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
 			</svg>
 		</div>
-		<section class="intro">
+		<section class="intro" id="section-intro">
 			<header class="header">
 	<div class="header__left-side">
 		<nav>
 			<ul>
 				<li>
-					<a href="#" class="active">
+					<a href="#section-intro" class="active">
 						About
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="#section-projects">
 						Projects
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="#section-contact">
 						Contact
 					</a>
 				</li>
@@ -93,7 +93,27 @@
 		</div>
 	</div>
 </header>
-			
+			<div class="loader-wrapper">
+	<div class="loader">
+		<svg class="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0%" stop-color="hsl(193,90%,55%)" />
+					<stop offset="100%" stop-color="hsl(223,90%,55%)" />
+				</linearGradient>
+			</defs>
+			<circle class="pl__ring" r="56" cx="64" cy="64" fill="none" stroke="hsla(0,10%,10%,0.1)" stroke-width="16"
+				stroke-linecap="round" />
+			<path class="pl__worm"
+				d="M92,15.492S78.194,4.967,66.743,16.887c-17.231,17.938-28.26,96.974-28.26,96.974L119.85,59.892l-99-31.588,57.528,89.832L97.8,19.349,13.636,88.51l89.012,16.015S81.908,38.332,66.1,22.337C50.114,6.156,36,15.492,36,15.492a56,56,0,1,0,56,0Z"
+				fill="none" stroke="url(#pl-grad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"
+				stroke-dasharray="44 1111" stroke-dashoffset="10" />
+		</svg>
+		<h2>
+			loading
+		</h2>
+	</div>
+</div>
 			<div id="loading"></div>
 			<div class="container">
 				<div class="container__left-side">
@@ -224,14 +244,14 @@
 				</div>
 			</div>
 		</section>
-		<section class="projects">
+		<section class="projects" id="section-projects">
 			<!-- <section class="orb">
 				<div class="orb__item"></div>
 			</section> -->
 			<div class="projects__container">
 				<div class="projects__header">
 					<h2>
-						<span class=sr-only>
+						<span class="sr-only">
 							Projects
 						</span>
 						<span aria-hidden="true">
@@ -246,7 +266,7 @@
 						</span>
 					</h2>
 				</div>
-				<div class="project__items _item-1 reveal">
+				<div class="project__items reveal _item-1">
 					<div class="project__left-side">
 						<div class="test">
 							<div class="project__inner">
@@ -308,14 +328,18 @@
 						</div>
 						<div class="project__link-block">
 							<div class="project__link">
-								<a href="#" target="_blank" rel="noopener noreferrer">
+								<a class="btn-blanked" href="#" target="_blank" rel="noopener noreferrer">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
 									Familiarize
 								</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="project__items _item-2 reveal">
+				<div class="project__items reveal _item-2">
 					<div class="project__left-side">
 						<div class="project__browser">
 							<div class="browser__header">
@@ -327,14 +351,75 @@
 								<div class="browser__search">
 									<div class="search-input">
 										<span>
-											tech-online.store
+											alexeevivan.com
 										</span>
 									</div>
 								</div>
 							</div>
 							<div class="browser__main" id="some">
 								<div class="browser__content" id="some1">
-									<canvas id="hero-lightpass" />
+									<canvas id="hero-lightpass"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project__right-side">
+						<div class="project__synopsis-block">
+							<div class="project__header">
+								<h2>
+									Apple AirPods Animation
+								</h2>
+							</div>
+							<div class="project__description">
+								<ul>
+									<li>
+										GSAP
+									</li>
+									<li>
+										Clean JS
+									</li>
+									<li>
+										Real-time image capture
+									</li>
+									<li>
+										Original grabbed product image
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="project__link-block">
+							<div class="project__link">
+								<a class="btn-blanked" href="#" target="_blank" rel="noopener noreferrer">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									Familiarize
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="project__items reveal _item-3">
+					<div class="project__left-side">
+						<div class="project__browser">
+							<div class="browser__header">
+								<div class="browser__iteraction">
+									<div class="btn close"></div>
+									<div class="btn resize"></div>
+									<div class="btn hide"></div>
+								</div>
+								<div class="browser__search">
+									<div class="search-input">
+										<span>
+											alexeevivan.com
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="browser__main" id="some">
+								<div class="browser__content" id="some1">
+									<canvas id="hero-lightpass"></canvas>
 								</div>
 							</div>
 						</div>
@@ -374,7 +459,8 @@
 						</div>
 						<div class="project__link-block">
 							<div class="project__link">
-								<a href="#" target="_blank" rel="noopener noreferrer">
+								<a class="btn-blanked" href="#" target="_blank" rel="noopener noreferrer">
+									<span></span><span></span><span></span><span></span>
 									Familiarize
 								</a>
 							</div>
@@ -383,10 +469,12 @@
 				</div>
 			</div>
 		</section>
+		<section class="contact" id="section-contact"></section>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js?_v=20221212173307"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20221212173307"> </script>
-	<script src="js/app.min.js?_v=20221212173307"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20221213013339"> </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js?_v=20221213013339"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js?_v=20221213013339"></script>
+	<script src="js/app.min.js?_v=20221213013339"></script>
 
 </body>
 

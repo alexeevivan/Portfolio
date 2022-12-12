@@ -2,7 +2,8 @@ import * as flsFunctions from "./modules/functions.js";
 import { gsap } from "gsap";
 import { PixiPlugin } from "gsap/PixiPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
-gsap.registerPlugin(PixiPlugin, MotionPathPlugin, scrollTrigger);
+gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 flsFunctions.isWebp();
 
@@ -121,9 +122,7 @@ mainTL
 (function ($) {
 	$(document).ready(function () {
 		"use strict";
-
-		//Scroll back to top
-
+		// ------------------------ Scroll back to top
 		var progressPath = document.querySelector('.progress-wrap path');
 		var pathLength = progressPath.getTotalLength();
 		progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
@@ -153,14 +152,11 @@ mainTL
 			jQuery('html, body').animate({ scrollTop: 0 }, duration);
 			return false;
 		})
-
-
 	});
 
 })(jQuery);
 
-// Apple divice scrolling
-
+// ------------------------ Apple divice scrolling
 console.clear();
 
 const canvas = document.getElementById("hero-lightpass");
@@ -189,7 +185,9 @@ gsap.to(airpods, {
 	frame: frameCount - 1,
 	snap: "frame",
 	scrollTrigger: {
-		scrub: 0.5
+		scroller: ".browser__main",
+		trigger: ".hero-lightpass",
+		scrub: true
 	},
 	onUpdate: render // use animation onUpdate instead of scrollTrigger's onUpdate
 });
@@ -202,7 +200,8 @@ function render() {
 }
 
 
-// Reveal
+
+// ------------------------ Reveal
 
 function reveal() {
 	var reveals = document.querySelectorAll(".reveal");
