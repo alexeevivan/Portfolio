@@ -608,6 +608,15 @@ header .header__right-side .linkedin {
   transition: 0.6s;
 }
 
+header .header__right-side .github a,
+header .header__right-side .linkedin a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+}
+
 header .header__right-side .github a img,
 header .header__right-side .linkedin a img {
   width: 75px;
@@ -1157,30 +1166,6 @@ header .header__right-side .linkedin:hover {
 
 .wrapper .intro .container .container__right-side .container__description .container__block .container__text ul > li {
   list-style: none;
-}
-
-@-webkit-keyframes drift {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes drift {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 .wrapper .projects {
@@ -1789,6 +1774,186 @@ header .header__right-side .linkedin:hover {
           transform-origin: bottom;
 }
 
+.wrapper .contact {
+  min-height: 25vh;
+  height: auto;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#551A2C), to(#721E35));
+  background: -o-linear-gradient(left, #551A2C, #721E35);
+  background: linear-gradient(to right, #551A2C, #721E35);
+}
+
+.wrapper .contact .contact__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 30px 0;
+}
+
+.wrapper .contact .contact__container .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper .contact .contact__container .line:first-child {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.wrapper .contact .contact__container .line::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  margin-left: 25%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(var(--light)), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), var(--light), rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), var(--light), rgba(0, 0, 0, 0));
+  -webkit-animation: animate 4s linear infinite;
+          animation: animate 4s linear infinite;
+}
+
+.wrapper .contact .contact__container h3 {
+  margin: 30px 0 0 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--light);
+}
+
+.wrapper .contact .contact__container .contact__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0 0 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.wrapper .contact .contact__container .contact__links .contact__linkedin,
+.wrapper .contact .contact__container .contact__links .contact__github,
+.wrapper .contact .contact__container .contact__links .contact__twitter,
+.wrapper .contact .contact__container .contact__links .contact__telegram,
+.wrapper .contact .contact__container .contact__links .contact__gmail {
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  margin: 0 45px 0 0;
+}
+
+.wrapper .contact .contact__container .contact__links .contact__linkedin:last-child,
+.wrapper .contact .contact__container .contact__links .contact__github:last-child,
+.wrapper .contact .contact__container .contact__links .contact__twitter:last-child,
+.wrapper .contact .contact__container .contact__links .contact__telegram:last-child,
+.wrapper .contact .contact__container .contact__links .contact__gmail:last-child {
+  margin: 0;
+}
+
+.wrapper .contact .contact__container .contact__links .contact__linkedin a img,
+.wrapper .contact .contact__container .contact__links .contact__github a img,
+.wrapper .contact .contact__container .contact__links .contact__twitter a img,
+.wrapper .contact .contact__container .contact__links .contact__telegram a img,
+.wrapper .contact .contact__container .contact__links .contact__gmail a img {
+  width: 50px;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.wrapper .contact .contact__container .contact__links .contact__linkedin a:hover img,
+.wrapper .contact .contact__container .contact__links .contact__github a:hover img,
+.wrapper .contact .contact__container .contact__links .contact__twitter a:hover img,
+.wrapper .contact .contact__container .contact__links .contact__telegram a:hover img,
+.wrapper .contact .contact__container .contact__links .contact__gmail a:hover img {
+  -webkit-filter: drop-shadow(4px 4px 0px #17181D);
+          filter: drop-shadow(4px 4px 0px #17181D);
+}
+
+.wrapper .contact .contact__container .contact__mail {
+  margin: 30px 0 0 0;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .contact .contact__container .contact__mail h3 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--light);
+  font-weight: 300;
+}
+
+/* @keyframes animation
+==================================================
+*/
+
+@-webkit-keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @-webkit-keyframes h1Animation {
   to {
     -webkit-transform: translateY(20vh);
@@ -2010,6 +2175,66 @@ header .header__right-side .linkedin:hover {
     -webkit-transform: translateY(-900px);
             transform: translateY(-900px);
     ransition: transform 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 2s;
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+
+  50.1% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+
+  50.1% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
   }
 }
 
