@@ -1413,517 +1413,517 @@ header {
 // ================================================================================================
 @media only screen and (min-width: 1200px) {}
 
-@media only screen and (min-width: 992px) and (min-width: 1199.98px) {
-	.header {
-		.header__left-side {
-			nav {
-				ul {
-					li {
-						a {
-							&.active {}
-						}
-					}
-				}
-
-				.tubelight {
-					.light-ray {}
-				}
-			}
-		}
-
-		.glow {}
-
-		.box {
-			.wave {
-				&.-one {}
-
-				&.-two {}
-
-				&.-three {}
-			}
-		}
-
-		.logo {
-			img {}
-		}
-
-		.header__right-side {
-			.github {
-				a {
-					img {}
-				}
-			}
-
-			.linkedin {
-				a {
-					img {}
-				}
-			}
-		}
-
-	}
-
-	.wrapper {
-		.intro {
-			.container {
-				margin: 25px 0 0 0;
-				height: calc(100vh - 230px);
-				flex-direction: column;
-
-				.container__left-side {
-					flex-direction: row;
-					width: 100%;
-					justify-content: space-around;
-					height: 200px;
-
-					.container__slogan {
-						width: 45%;
-						height: 200px;
-
-						.container__item-1 {
-							max-width: inherit;
-
-							#textone,
-							#texttwo {
-								padding: 0 20%;
-								text-align: center;
-							}
-
-							.text-block {
-								h1 {
-									font-size: 10px;
-									line-height: 15px;
-								}
-							}
-						}
-
-						.container__item-2 {
-							#changeBtn {
-								transform: translate(0%);
-							}
-						}
-					}
-
-					.container__stack {
-						width: 45%;
-
-						.container__synopsis {
-							h2 {}
-						}
-					}
-
-					.container__items {
-						.container__item {
-							&._item-1 {}
+// @media only screen and (min-width: 992px) and (min-width: 1199.98px) {
+// 	.header {
+// 		.header__left-side {
+// 			nav {
+// 				ul {
+// 					li {
+// 						a {
+// 							&.active {}
+// 						}
+// 					}
+// 				}
+
+// 				.tubelight {
+// 					.light-ray {}
+// 				}
+// 			}
+// 		}
+
+// 		.glow {}
+
+// 		.box {
+// 			.wave {
+// 				&.-one {}
+
+// 				&.-two {}
+
+// 				&.-three {}
+// 			}
+// 		}
+
+// 		.logo {
+// 			img {}
+// 		}
+
+// 		.header__right-side {
+// 			.github {
+// 				a {
+// 					img {}
+// 				}
+// 			}
+
+// 			.linkedin {
+// 				a {
+// 					img {}
+// 				}
+// 			}
+// 		}
+
+// 	}
+
+// 	.wrapper {
+// 		.intro {
+// 			.container {
+// 				margin: 25px 0 0 0;
+// 				height: calc(100vh - 230px);
+// 				flex-direction: column;
+
+// 				.container__left-side {
+// 					flex-direction: row;
+// 					width: 100%;
+// 					justify-content: space-around;
+// 					height: 200px;
+
+// 					.container__slogan {
+// 						width: 45%;
+// 						height: 200px;
+
+// 						.container__item-1 {
+// 							max-width: inherit;
+
+// 							#textone,
+// 							#texttwo {
+// 								padding: 0 20%;
+// 								text-align: center;
+// 							}
+
+// 							.text-block {
+// 								h1 {
+// 									font-size: 10px;
+// 									line-height: 15px;
+// 								}
+// 							}
+// 						}
+
+// 						.container__item-2 {
+// 							#changeBtn {
+// 								transform: translate(0%);
+// 							}
+// 						}
+// 					}
+
+// 					.container__stack {
+// 						width: 45%;
+
+// 						.container__synopsis {
+// 							h2 {}
+// 						}
+// 					}
+
+// 					.container__items {
+// 						.container__item {
+// 							&._item-1 {}
 
-							&._item-2 {}
+// 							&._item-2 {}
 
-							&._item-3 {}
+// 							&._item-3 {}
 
-							&._item-4 {}
+// 							&._item-4 {}
 
-							&._item-5 {}
+// 							&._item-5 {}
 
-							&._item-6 {}
+// 							&._item-6 {}
 
-							&._item-7 {}
+// 							&._item-7 {}
 
-							&._item-8 {}
-						}
-					}
-				}
+// 							&._item-8 {}
+// 						}
+// 					}
+// 				}
 
-				.container__right-side {
-					.container__experience {
-						.container__experience-block {
-							.container__header {
-								img {}
+// 				.container__right-side {
+// 					.container__experience {
+// 						.container__experience-block {
+// 							.container__header {
+// 								img {}
 
-								.vector-line {
-									&._item-1 {}
+// 								.vector-line {
+// 									&._item-1 {}
 
-									&._item-2 {}
+// 									&._item-2 {}
 
-									&._item-3 {}
-								}
-
-								span {}
-
-								h1 {}
-							}
-
-							.container__description {
-								.container__block {
-									.container__icon {
-										.icon-frame {
-											&._item-1 {}
-
-											&._item-2 {}
-
-											span {}
-										}
-									}
-
-									.container__text {
-										span {}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-
-		.projects {
-			background-image: conic-gradient(from 0deg at 50% 5vh, #bb2649 0, #090e16 100%);
-
-			.projects__container {
-				.projects__header {
-					height: 10vh;
-
-					h2 {
-						.sr-only {}
-					}
-				}
-
-				.project__items {
-					flex-direction: column;
-
-					.project__left-side {
-						width: 90%;
-
-						.test {
-							height: 191px;
-
-							.project__inner {
-								height: 100%;
-
-								.th {
-									top: 5%;
-								}
-
-								.phone {
-									height: 140px;
-									bottom: 0;
-								}
-							}
-						}
-
-						.project__browser {
-							.browser__header {
-								.browser__iteraction {
-									.btn {
-										&.close {}
-
-										&.resize {}
-
-										&.hide {}
-									}
-								}
-
-								.browser__search {
-									.search-input {
-										span {}
-									}
-								}
-							}
-
-							.browser__main {
-								.browser__content {
-									#hero-lightpass {}
-								}
-							}
-						}
-					}
-
-					.project__right-side {
-						.project__synopsis-block {
-							.project__header {
-								h2 {}
-							}
-
-							.project__description {
-								ul {
-									li {}
-								}
-							}
-						}
-
-						.project__link-block {
-							.project__link {
-								.btn-blanked {
-									span {}
-								}
-							}
-						}
-					}
-
-					&.reveal {}
-
-					&._item-1 {}
-				}
-			}
-		}
-	}
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
-	.header {
-		.header__left-side {
-			nav {
-				ul {
-					li {
-						a {
-							&.active {}
-						}
-					}
-				}
-
-				.tubelight {
-					.light-ray {}
-				}
-			}
-		}
-
-		.glow {}
-
-		.box {
-			.wave {
-				&.-one {}
-
-				&.-two {}
-
-				&.-three {}
-			}
-		}
-
-		.logo {
-			img {}
-		}
-
-		.header__right-side {
-			.github {
-				a {
-					img {}
-				}
-			}
-
-			.linkedin {
-				a {
-					img {}
-				}
-			}
-		}
-
-	}
-
-	.wrapper {
-		.intro {
-			.container {
-				margin: 25px 0 0 0;
-				height: calc(100vh - 230px);
-				flex-direction: column;
-
-				.container__left-side {
-					flex-direction: row;
-					width: 100%;
-					justify-content: space-around;
-					height: 200px;
-
-					.container__slogan {
-						width: 45%;
-						height: 200px;
-
-						.container__item-1 {
-							max-width: inherit;
-
-							#textone,
-							#texttwo {
-								padding: 0 20%;
-								text-align: center;
-							}
-
-							.text-block {
-								h1 {
-									font-size: 10px;
-									line-height: 15px;
-								}
-							}
-						}
-
-						.container__item-2 {
-							#changeBtn {
-								transform: translate(0%);
-							}
-						}
-					}
-
-					.container__stack {
-						width: 45%;
-
-						.container__synopsis {
-							h2 {}
-						}
-					}
-
-					.container__items {
-						.container__item {
-							&._item-1 {}
-
-							&._item-2 {}
-
-							&._item-3 {}
-
-							&._item-4 {}
-
-							&._item-5 {}
-
-							&._item-6 {}
-
-							&._item-7 {}
-
-							&._item-8 {}
-						}
-					}
-				}
-
-				.container__right-side {
-					.container__experience {
-						.container__experience-block {
-							.container__header {
-								img {}
-
-								.vector-line {
-									&._item-1 {}
-
-									&._item-2 {}
-
-									&._item-3 {}
-								}
-
-								span {}
-
-								h1 {}
-							}
-
-							.container__description {
-								.container__block {
-									.container__icon {
-										.icon-frame {
-											&._item-1 {}
-
-											&._item-2 {}
-
-											span {}
-										}
-									}
-
-									.container__text {
-										span {}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-
-		.projects {
-			background-image: conic-gradient(from 0deg at 50% 5vh, #bb2649 0, #090e16 100%);
-
-			.projects__container {
-				.projects__header {
-					height: 10vh;
-
-					h2 {
-						.sr-only {}
-					}
-				}
-
-				.project__items {
-					flex-direction: column;
-
-					.project__left-side {
-						width: 90%;
-
-						.test {
-							height: 191px;
-
-							.project__inner {
-								height: 100%;
-
-								.th {
-									top: 5%;
-								}
-
-								.phone {
-									height: 140px;
-									bottom: 0;
-								}
-							}
-						}
-
-						.project__browser {
-							.browser__header {
-								.browser__iteraction {
-									.btn {
-										&.close {}
-
-										&.resize {}
-
-										&.hide {}
-									}
-								}
-
-								.browser__search {
-									.search-input {
-										span {}
-									}
-								}
-							}
-
-							.browser__main {
-								.browser__content {
-									#hero-lightpass {}
-								}
-							}
-						}
-					}
-
-					.project__right-side {
-						.project__synopsis-block {
-							.project__header {
-								h2 {}
-							}
-
-							.project__description {
-								ul {
-									li {}
-								}
-							}
-						}
-
-						.project__link-block {
-							.project__link {
-								.btn-blanked {
-									span {}
-								}
-							}
-						}
-					}
-
-					&.reveal {}
-
-					&._item-1 {}
-				}
-			}
-		}
-	}
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767.98px) {
+// 									&._item-3 {}
+// 								}
+
+// 								span {}
+
+// 								h1 {}
+// 							}
+
+// 							.container__description {
+// 								.container__block {
+// 									.container__icon {
+// 										.icon-frame {
+// 											&._item-1 {}
+
+// 											&._item-2 {}
+
+// 											span {}
+// 										}
+// 									}
+
+// 									.container__text {
+// 										span {}
+// 									}
+// 								}
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+
+// 		.projects {
+// 			background-image: conic-gradient(from 0deg at 50% 5vh, #bb2649 0, #090e16 100%);
+
+// 			.projects__container {
+// 				.projects__header {
+// 					height: 10vh;
+
+// 					h2 {
+// 						.sr-only {}
+// 					}
+// 				}
+
+// 				.project__items {
+// 					flex-direction: column;
+
+// 					.project__left-side {
+// 						width: 90%;
+
+// 						.test {
+// 							height: 191px;
+
+// 							.project__inner {
+// 								height: 100%;
+
+// 								.th {
+// 									top: 5%;
+// 								}
+
+// 								.phone {
+// 									height: 140px;
+// 									bottom: 0;
+// 								}
+// 							}
+// 						}
+
+// 						.project__browser {
+// 							.browser__header {
+// 								.browser__iteraction {
+// 									.btn {
+// 										&.close {}
+
+// 										&.resize {}
+
+// 										&.hide {}
+// 									}
+// 								}
+
+// 								.browser__search {
+// 									.search-input {
+// 										span {}
+// 									}
+// 								}
+// 							}
+
+// 							.browser__main {
+// 								.browser__content {
+// 									#hero-lightpass {}
+// 								}
+// 							}
+// 						}
+// 					}
+
+// 					.project__right-side {
+// 						.project__synopsis-block {
+// 							.project__header {
+// 								h2 {}
+// 							}
+
+// 							.project__description {
+// 								ul {
+// 									li {}
+// 								}
+// 							}
+// 						}
+
+// 						.project__link-block {
+// 							.project__link {
+// 								.btn-blanked {
+// 									span {}
+// 								}
+// 							}
+// 						}
+// 					}
+
+// 					&.reveal {}
+
+// 					&._item-1 {}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+// 	.header {
+// 		.header__left-side {
+// 			nav {
+// 				ul {
+// 					li {
+// 						a {
+// 							&.active {}
+// 						}
+// 					}
+// 				}
+
+// 				.tubelight {
+// 					.light-ray {}
+// 				}
+// 			}
+// 		}
+
+// 		.glow {}
+
+// 		.box {
+// 			.wave {
+// 				&.-one {}
+
+// 				&.-two {}
+
+// 				&.-three {}
+// 			}
+// 		}
+
+// 		.logo {
+// 			img {}
+// 		}
+
+// 		.header__right-side {
+// 			.github {
+// 				a {
+// 					img {}
+// 				}
+// 			}
+
+// 			.linkedin {
+// 				a {
+// 					img {}
+// 				}
+// 			}
+// 		}
+
+// 	}
+
+// 	.wrapper {
+// 		.intro {
+// 			.container {
+// 				margin: 25px 0 0 0;
+// 				height: calc(100vh - 230px);
+// 				flex-direction: column;
+
+// 				.container__left-side {
+// 					flex-direction: row;
+// 					width: 100%;
+// 					justify-content: space-around;
+// 					height: 200px;
+
+// 					.container__slogan {
+// 						width: 45%;
+// 						height: 200px;
+
+// 						.container__item-1 {
+// 							max-width: inherit;
+
+// 							#textone,
+// 							#texttwo {
+// 								padding: 0 20%;
+// 								text-align: center;
+// 							}
+
+// 							.text-block {
+// 								h1 {
+// 									font-size: 10px;
+// 									line-height: 15px;
+// 								}
+// 							}
+// 						}
+
+// 						.container__item-2 {
+// 							#changeBtn {
+// 								transform: translate(0%);
+// 							}
+// 						}
+// 					}
+
+// 					.container__stack {
+// 						width: 45%;
+
+// 						.container__synopsis {
+// 							h2 {}
+// 						}
+// 					}
+
+// 					.container__items {
+// 						.container__item {
+// 							&._item-1 {}
+
+// 							&._item-2 {}
+
+// 							&._item-3 {}
+
+// 							&._item-4 {}
+
+// 							&._item-5 {}
+
+// 							&._item-6 {}
+
+// 							&._item-7 {}
+
+// 							&._item-8 {}
+// 						}
+// 					}
+// 				}
+
+// 				.container__right-side {
+// 					.container__experience {
+// 						.container__experience-block {
+// 							.container__header {
+// 								img {}
+
+// 								.vector-line {
+// 									&._item-1 {}
+
+// 									&._item-2 {}
+
+// 									&._item-3 {}
+// 								}
+
+// 								span {}
+
+// 								h1 {}
+// 							}
+
+// 							.container__description {
+// 								.container__block {
+// 									.container__icon {
+// 										.icon-frame {
+// 											&._item-1 {}
+
+// 											&._item-2 {}
+
+// 											span {}
+// 										}
+// 									}
+
+// 									.container__text {
+// 										span {}
+// 									}
+// 								}
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+
+// 		.projects {
+// 			background-image: conic-gradient(from 0deg at 50% 5vh, #bb2649 0, #090e16 100%);
+
+// 			.projects__container {
+// 				.projects__header {
+// 					height: 10vh;
+
+// 					h2 {
+// 						.sr-only {}
+// 					}
+// 				}
+
+// 				.project__items {
+// 					flex-direction: column;
+
+// 					.project__left-side {
+// 						width: 90%;
+
+// 						.test {
+// 							height: 191px;
+
+// 							.project__inner {
+// 								height: 100%;
+
+// 								.th {
+// 									top: 5%;
+// 								}
+
+// 								.phone {
+// 									height: 140px;
+// 									bottom: 0;
+// 								}
+// 							}
+// 						}
+
+// 						.project__browser {
+// 							.browser__header {
+// 								.browser__iteraction {
+// 									.btn {
+// 										&.close {}
+
+// 										&.resize {}
+
+// 										&.hide {}
+// 									}
+// 								}
+
+// 								.browser__search {
+// 									.search-input {
+// 										span {}
+// 									}
+// 								}
+// 							}
+
+// 							.browser__main {
+// 								.browser__content {
+// 									#hero-lightpass {}
+// 								}
+// 							}
+// 						}
+// 					}
+
+// 					.project__right-side {
+// 						.project__synopsis-block {
+// 							.project__header {
+// 								h2 {}
+// 							}
+
+// 							.project__description {
+// 								ul {
+// 									li {}
+// 								}
+// 							}
+// 						}
+
+// 						.project__link-block {
+// 							.project__link {
+// 								.btn-blanked {
+// 									span {}
+// 								}
+// 							}
+// 						}
+// 					}
+
+// 					&.reveal {}
+
+// 					&._item-1 {}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+@media (min-width: 480px) and (max-width: 767.98px) {
 	.header {
 		height: 180px;
 		margin: 25px 0 0 0;
