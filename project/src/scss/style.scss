@@ -2463,7 +2463,7 @@ header {
 }
 
 // iPhone XS portrait
-@media screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+@media screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation: portrait) {
 	.header {
 		height: 180px;
 		margin: 25px 0 0 0;
@@ -2807,7 +2807,7 @@ header {
 }
 
 // iPhone XS landscape
-@media screen and (device-width : 812px) and (device-height : 375px) and (-webkit-device-pixel-ratio : 3) {
+@media screen and (device-width : 812px) and (device-height : 375px) and (-webkit-device-pixel-ratio : 3) and (orientation: landscape) {
 	.header {
 		height: 180px;
 		margin: 25px 0 0 0;
