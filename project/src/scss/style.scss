@@ -2462,8 +2462,8 @@ header {
 	}
 }
 
-/* iPhone XS */
-@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+// iPhone XS portrait
+@media screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
 	.header {
 		height: 180px;
 		margin: 25px 0 0 0;
@@ -2536,7 +2536,7 @@ header {
 
 		.intro {
 			background-image: conic-gradient(from 180deg at 50% 95%, #090e16 0, #bb2649 100%);
-			height: 150vh;
+			height: 100%;
 
 			.container {
 				margin: 25px 0 0 0;
@@ -2615,6 +2615,7 @@ header {
 							.container__description {
 								grid-template-columns: calc(50% - 20px) calc(50% - 20px);
 								column-gap: 40px;
+								padding: 0 0 50px 0;
 							}
 						}
 					}
@@ -2682,6 +2683,360 @@ header {
 						.project__browser {
 							height: 220px;
 							width: 100%;
+
+							.browser__header {
+								.browser__iteraction {
+									width: 90px;
+
+									.btn {
+										height: 6px;
+										width: 6px;
+									}
+								}
+
+								.browser__search {
+									width: calc(100% - 90px);
+
+									.search-input {
+										span {
+											font-size: 8px;
+										}
+									}
+								}
+							}
+						}
+					}
+
+					.project__right-side {
+						width: 90%;
+						margin: 12px 0 0 0;
+
+						.project__synopsis-block {
+							.project__header {
+								h2 {
+									font-size: 20px;
+									line-height: 25px;
+								}
+							}
+						}
+
+						.project__link-block {
+							.project__link {
+								.btn-blanked {
+									position: absolute;
+									right: 5%;
+									font-size: 10px;
+
+									span {
+
+										&:nth-child(1),
+										&:nth-child(3) {
+											width: 10px;
+											height: 2px;
+										}
+
+										&:nth-child(2),
+										&:nth-child(4) {
+											width: 2px;
+											height: 10px;
+										}
+
+										&:nth-child(1) {
+											left: -15px;
+										}
+
+										&:nth-child(2) {
+											top: -15px;
+										}
+
+										&:nth-child(3) {
+											right: -15px;
+										}
+
+										&:nth-child(4) {
+											bottom: -15px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.contact {
+			background: linear-gradient(to right, #5e1b2e, #671c32);
+
+			.contact__container {
+
+				h3 {
+					display: inline-block;
+					width: 50%;
+					text-align: center;
+					font-size: 1em;
+				}
+
+				.contact__links {
+					margin: 0;
+
+					.contact__linkedin,
+					.contact__github,
+					.contact__telegram,
+					.contact__twitter,
+					.contact__gmail {
+						a {
+							img {
+								width: 30px;
+							}
+						}
+					}
+				}
+
+				.contact__mail {
+					margin: 0;
+
+					h3 {
+						font-size: 10px;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+// iPhone XS landscape
+@media screen and (device-width : 812px) and (device-height : 375px) and (-webkit-device-pixel-ratio : 3) {
+	.header {
+		height: 180px;
+		margin: 25px 0 0 0;
+		width: 100%;
+		flex-direction: column;
+		justify-content: unset;
+
+		.header__left-side {
+			width: 100%;
+			height: 60px;
+			margin: 0;
+			order: 2;
+
+			nav {
+				height: 100%;
+				border: none;
+				box-shadow: none;
+
+				ul {
+					justify-content: space-evenly;
+				}
+			}
+		}
+
+		.glow {
+			width: 100px;
+			height: 100px;
+			left: calc(50% - 50px);
+			top: 25px;
+		}
+
+		.box {
+			.wave {
+				width: 100px;
+				height: 100px;
+				left: calc(50% - 50px);
+				top: 25px;
+			}
+		}
+
+		.logo {
+			height: 100px;
+			width: 100px;
+			left: calc(50% - 50px);
+			top: 25px;
+
+		}
+
+		.header__right-side {
+			width: 100%;
+			height: 120px;
+			order: 1;
+			padding: 0 20%;
+			justify-content: space-between;
+
+			.github,
+			.linkedin {
+				a {
+					img {
+						width: 50px;
+					}
+				}
+			}
+		}
+
+	}
+
+	.wrapper {
+		.progress-wrap {
+			bottom: 10px;
+			right: 10px;
+		}
+
+		.intro {
+			background-image: conic-gradient(from 180deg at 50% 95%, #090e16 0, #bb2649 100%);
+			height: 100%;
+
+			.container {
+				margin: 25px 0 0 0;
+				height: auto;
+				flex-direction: column;
+				justify-content: unset;
+
+				.container__left-side {
+					flex-direction: column;
+					width: 100%;
+					justify-content: space-around;
+					align-items: center;
+					height: 325px;
+
+					.container__slogan {
+						width: 60%;
+						height: 150px;
+
+						.container__item-1 {
+							max-width: inherit;
+
+							#textone,
+							#texttwo {
+								padding: 0 20%;
+								text-align: center;
+							}
+
+							.text-block {
+								h1 {
+									font-size: 10px;
+									line-height: 15px;
+								}
+							}
+						}
+
+						.container__item-2 {
+							#changeBtn {
+								transform: translate(0%);
+							}
+						}
+					}
+
+					.container__stack {
+						width: 60%;
+						height: 150px;
+
+						.container__synopsis {
+							h2 {
+								font-size: 15px;
+							}
+						}
+					}
+				}
+
+				.container__right-side {
+					width: 100%;
+					margin: 25px 0 0 0;
+					height: 100%;
+
+					.container__experience {
+						padding: 0 2.5% 0 2.5%;
+						justify-content: center;
+
+						.container__experience-block {
+							margin: 0;
+							justify-content: space-around;
+
+							.container__header {
+								margin: 20px 0 0 0;
+
+								img {
+									width: 130px;
+									margin: -40px 0 0 0;
+								}
+							}
+
+							.container__description {
+								grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+								column-gap: 40px;
+								padding: 0 0 50px 0;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.projects {
+			background-image: conic-gradient(from 0deg at 50% 14vh, #bb2649 0, #090e16 100%);
+
+			.projects__container {
+				.projects__header {
+					height: 10vh;
+
+					h2 {
+						font-size: 25px;
+
+						[aria-hidden] {
+							.stretch-o {
+								translate: 0 -0.08ch;
+							}
+						}
+					}
+				}
+
+				.project__items {
+					flex-direction: row;
+					padding: 0;
+
+					&._item-3 {
+						padding: 25px 0 50px 0;
+
+						.project__left-side {
+							height: 300px;
+							display: flex;
+							justify-content: center;
+						}
+
+						.project__right-side {
+							height: 130px;
+						}
+					}
+
+					.project__left-side {
+						width: 90%;
+						height: 250px;
+
+						.test {
+							height: 195px;
+
+							.project__inner {
+								height: 100%;
+
+								.th {
+									top: 5%;
+									left: 10%;
+									width: 69.5%;
+								}
+
+								.laptop {
+									width: 90%;
+								}
+
+								.phone {
+									height: 110px;
+									bottom: 0;
+								}
+							}
+						}
+
+						.project__browser {
+							height: 220px;
+							width: 80%;
 
 							.browser__header {
 								.browser__iteraction {
@@ -2878,7 +3233,7 @@ header {
 
 		.intro {
 			background-image: conic-gradient(from 180deg at 50% 95%, #090e16 0, #bb2649 100%);
-			height: 130vh;
+			height: 100%;
 
 			.container {
 				margin: 25px 0 0 0;
@@ -2957,6 +3312,7 @@ header {
 							.container__description {
 								grid-template-columns: calc(50% - 20px) calc(50% - 20px);
 								column-gap: 40px;
+								padding: 0 0 50px 0;
 							}
 						}
 					}
