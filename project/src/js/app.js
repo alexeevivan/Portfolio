@@ -159,7 +159,7 @@ mainTL
 // ------------------------ Apple divice scrolling
 console.clear();
 
-const canvas = document.getElementById("hero-lightpass");
+const canvas = document.getElementById("apple-device");
 const context = canvas.getContext("2d");
 
 canvas.width = 1158;
