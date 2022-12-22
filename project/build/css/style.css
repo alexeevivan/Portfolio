@@ -1545,7 +1545,7 @@ header .header__right-side .linkedin:hover {
 
 .wrapper .projects .projects__container .project__items .project__right-side {
   width: 50%;
-  height: 200px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
