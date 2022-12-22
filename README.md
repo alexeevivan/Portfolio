@@ -14,6 +14,9 @@ ___
 + pure JS
 + Keyframes animation
 + Flexbox & Grid layout
+### Used hosting & domain platforms
++ Digital Ocean
++ GoDaddy
 ___
 ### [:link: Familiarize website link](https://alexeevivan.com/)
 ___
