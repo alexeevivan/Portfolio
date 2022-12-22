@@ -3686,7 +3686,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+@media only screen and (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
   body .wrapper .progress-wrap {
     bottom: 80px;
   }
