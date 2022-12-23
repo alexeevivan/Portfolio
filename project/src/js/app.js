@@ -38,6 +38,9 @@ let whiteColor = getComputedStyle(root).getPropertyValue("--light");
 let blackColor = getComputedStyle(root).getPropertyValue("--dark");
 let darkenColor = getComputedStyle(root).getPropertyValue("--darken");
 let magentaColor = getComputedStyle(root).getPropertyValue("--magenta");
+let darkMagentaColor = getComputedStyle(root).getPropertyValue("--dark-magenta");
+let lightMagentaColor = getComputedStyle(root).getPropertyValue("--light-magenta");
+
 
 changeBtn.addEventListener('click', (e) => changeColor());
 
@@ -48,11 +51,15 @@ function changeColor() {
 		root.style.setProperty('--dark-to-switch', whiteColor);
 		root.style.setProperty('--magenta-to-darken-switch', darkenColor);
 		root.style.setProperty('--darken-to-magenta-switch', magentaColor);
+		root.style.setProperty('--dark-magenta-to-darken-switch', darkenColor);
+		root.style.setProperty('--light-magenta-to-darken-switch', darkenColor);
 	} else {
 		root.style.setProperty('--light-to-switch', whiteColor);
 		root.style.setProperty('--dark-to-switch', blackColor);
 		root.style.setProperty('--magenta-to-darken-switch', magentaColor);
 		root.style.setProperty('--darken-to-magenta-switch', darkenColor);
+		root.style.setProperty('--dark-magenta-to-darken-switch', darkMagentaColor);
+		root.style.setProperty('--light-magenta-to-darken-switch', lightMagentaColor);
 	}
 }
 
