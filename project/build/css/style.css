@@ -4239,7 +4239,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media only screen and (device-width: 812px) and (device-height: 375px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
   body .wrapper .progress-wrap {
     bottom: 15px;
     right: 15px;
