@@ -3928,7 +3928,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 852.98px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 852.98px) and (orientation: landscape), (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
   body .wrapper .progress-wrap {
     bottom: 15px;
     right: 15px;
@@ -4077,7 +4077,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media only screen and (min-width: 853px) and (max-width: 991.98px) and (orientation: landscape) {
+@media only screen and (min-width: 853px) and (max-width: 991.98px) and (orientation: landscape), (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
   body .wrapper .progress-wrap {
     bottom: 15px;
     right: 15px;
@@ -4236,154 +4236,5 @@ header .header__right-side .linkedin:hover {
 
   .pl__ring {
     stroke: hsla(var(--hue), 10%, 90%, 0.1);
-  }
-}
-
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-  body .wrapper .progress-wrap {
-    bottom: 15px;
-    right: 15px;
-  }
-
-  body .wrapper .intro {
-    height: 100%;
-    background-image: conic-gradient(from 180deg at 50% 80%, #090E16 0%, var(--magenta-to-darken-switch) 100%);
-    padding: 0 0 20vh 0;
-  }
-
-  body .wrapper .intro .header .header__left-side {
-    width: 50%;
-    height: 100%;
-  }
-
-  body .wrapper .intro .header .header__right-side {
-    display: none;
-  }
-
-  body .wrapper .intro .header .glow {
-    height: 140px;
-    width: 140px;
-    top: 35px;
-    left: calc(75% - 70px);
-  }
-
-  body .wrapper .intro .header .logo,
-  body .wrapper .intro .header .box > .wave {
-    height: 125px;
-    width: 125px;
-    left: calc(75% - 62.5px);
-    top: 40px;
-  }
-
-  body .wrapper .intro .container {
-    height: 100%;
-  }
-
-  body .wrapper .intro .container .container__left-side {
-    min-height: 420px;
-  }
-
-  body .wrapper .intro .container .container__left-side .container__slogan,
-  body .wrapper .intro .container .container__left-side .container__stack {
-    width: 100%;
-    height: 175px;
-  }
-
-  body .wrapper .intro .container .container__left-side .container__stack .container__synopsis h2 {
-    font-size: 16px;
-  }
-
-  body .wrapper .projects {
-    background-image: conic-gradient(from 0deg at 50% 40vh, var(--magenta-to-darken-switch) 0%, #090E16 100%);
-    padding: 10vh 0 0 0;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items {
-    margin: 70px 0 0 0;
-    height: 100%;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items._item-3 .project__left-side {
-    max-height: 260px;
-    height: auto;
-    min-height: 260px;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items._item-3 .project__left-side .project__browser {
-    min-height: 250px;
-    max-height: 275px;
-    width: 95%;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items._item-3 .project__right-side {
-    max-height: 260px;
-    height: auto;
-    min-height: 260px;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block {
-    width: 55%;
-    margin: 0 0 0 5%;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__header h2 {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side {
-    max-height: 220px;
-    height: 210px;
-    min-height: 200px;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .test .project__inner .th {
-    top: 5%;
-    left: 11%;
-    width: 73%;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .test .project__inner .laptop {
-    width: 95%;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .test .project__inner .phone {
-    left: 75%;
-    bottom: 5%;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side {
-    max-height: 220px;
-    height: 210px;
-    min-height: 200px;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block {
-    width: 30%;
-    height: 40px;
-    margin: auto;
-  }
-
-  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked {
-    display: inline-block;
-    font-size: 10px;
-  }
-
-  body .wrapper .contact {
-    min-height: 100%;
-    height: 100vh;
-    background: -webkit-gradient(linear, left top, right top, from(var(--dark-magenta-to-darken-switch)), to(var(--light-magenta-to-darken-switch)));
-    background: -o-linear-gradient(left, var(--dark-magenta-to-darken-switch), var(--light-magenta-to-darken-switch));
-    background: linear-gradient(to right, var(--dark-magenta-to-darken-switch), var(--light-magenta-to-darken-switch));
-  }
-
-  body .wrapper .contact .contact__container {
-    text-align: center;
-  }
-
-  body .wrapper .contact .contact__container .line::before {
-    width: 100%;
-    left: 0;
-    margin: 0;
   }
 }
