@@ -2,8 +2,32 @@ import * as flsFunctions from "./modules/functions.js";
 import { gsap } from "gsap";
 import { PixiPlugin } from "gsap/PixiPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
 gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
+
+// ==========================================================
+// Reveal
+// ==========================================================
+function reveal() {
+	var reveals = document.querySelectorAll(".reveal");
+
+	for (var i = 0; i < reveals.length; i++) {
+		var windowHeight = window.innerHeight;
+		var elementTop = reveals[i].getBoundingClientRect().top;
+		var elementVisible = 10;
+
+		if (elementTop < windowHeight - elementVisible) {
+			reveals[i].classList.add("active");
+		} else {
+			reveals[i].classList.remove("active");
+		}
+	}
+}
+
+window.addEventListener("scroll", reveal);
+
 
 flsFunctions.isWebp();
 
@@ -13,7 +37,9 @@ window.addEventListener("scroll", () => {
 	false
 );
 
+// ==========================================================
 // Preloader
+// ==========================================================
 $.get("../html/loader.html", function (data) {
 	$("#loading").replaceWith(data);
 });
@@ -27,9 +53,9 @@ function removeLoader() {
 		$(".loader-wrapper").remove(); //makes page more lightweight 
 	});
 }
-
-//
-
+// ==========================================================
+// Change color
+// ==========================================================
 const root = document.documentElement;
 const changeBtn = document.getElementById('changeBtn');
 let mode = false;
@@ -131,7 +157,9 @@ mainTL
 	.add(slideTL)
 	.add(maskTL, 1.5);
 
-
+// ==========================================================
+// Scroll to top button
+// ==========================================================
 (function ($) {
 	$(document).ready(function () {
 		"use strict";
@@ -169,7 +197,9 @@ mainTL
 
 })(jQuery);
 
-// ------------------------ Apple divice scrolling
+// ==========================================================
+// Apple divice scrolling
+// ==========================================================
 console.clear();
 
 const canvas = document.getElementById("apple-device");
@@ -212,24 +242,23 @@ function render() {
 	context.drawImage(images[airpods.frame], 0, 0);
 }
 
+// ==========================================================
+// Swiper Slider
+// ==========================================================
 
-
-// ------------------------ Reveal
-
-function reveal() {
-	var reveals = document.querySelectorAll(".reveal");
-
-	for (var i = 0; i < reveals.length; i++) {
-		var windowHeight = window.innerHeight;
-		var elementTop = reveals[i].getBoundingClientRect().top;
-		var elementVisible = 10;
-
-		if (elementTop < windowHeight - elementVisible) {
-			reveals[i].classList.add("active");
-		} else {
-			reveals[i].classList.remove("active");
-		}
-	}
-}
-
-window.addEventListener("scroll", reveal);
+const swiper = new Swiper(".projects-slider", {
+	modules: [Navigation, Pagination],
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+		renderBullet: function (index, className) {
+			return '<span class="' + className + '">' + (index + 1) + '</span>';
+		},
+	},
+	simulateTouch: true,
+	loop: false,
+});

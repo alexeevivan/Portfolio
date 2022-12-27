@@ -1305,7 +1305,12 @@ header .header__right-side .linkedin:hover {
   transition: opacity 0.2s;
 }
 
-.wrapper .projects .projects__container .project__items {
+.wrapper .projects .projects__container .projects-slider {
+  overflow: hidden;
+  min-width: 0;
+}
+
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items {
   height: 65%;
   width: 100%;
   padding: 15px 0 0 0;
@@ -1324,11 +1329,11 @@ header .header__right-side .linkedin:hover {
       justify-content: space-around;
 }
 
-.wrapper .projects .projects__container .project__items:last-child {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items:last-child {
   padding: 15px 0 40px 0;
 }
 
-.wrapper .projects .projects__container .project__items.reveal {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items.reveal {
   position: relative;
   -webkit-transform: translateY(150px);
       -ms-transform: translateY(150px);
@@ -1339,14 +1344,14 @@ header .header__right-side .linkedin:hover {
   transition: 1s all ease;
 }
 
-.wrapper .projects .projects__container .project__items.reveal.active {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items.reveal.active {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side {
   width: 50%;
   height: 400px;
   display: -webkit-box;
@@ -1357,7 +1362,7 @@ header .header__right-side .linkedin:hover {
           align-items: center;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .test {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .test {
   display: block;
   position: relative;
   overflow: hidden;
@@ -1365,14 +1370,14 @@ header .header__right-side .linkedin:hover {
   height: 100%;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__inner {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__inner {
   position: absolute;
   width: 100%;
   overflow: hidden;
   left: 0%;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .th {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .th {
   position: absolute;
   top: 4%;
   left: 9%;
@@ -1394,13 +1399,13 @@ header .header__right-side .linkedin:hover {
           animation-delay: 2s;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .laptop {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .laptop {
   position: relative;
   z-index: 2;
   width: 80%;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .phone {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .phone {
   height: 70%;
   position: absolute;
   left: 65%;
@@ -1408,7 +1413,7 @@ header .header__right-side .linkedin:hover {
   z-index: 4;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser {
   height: 400px;
   width: 80%;
   background-color: #17181D;
@@ -1425,7 +1430,7 @@ header .header__right-side .linkedin:hover {
           box-sizing: border-box;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header {
   width: 100%;
   height: 28px;
   display: -webkit-box;
@@ -1440,7 +1445,7 @@ header .header__right-side .linkedin:hover {
           align-items: center;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header .browser__iteraction {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header .browser__iteraction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1458,25 +1463,25 @@ header .header__right-side .linkedin:hover {
   padding: 0 0 0 12px;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header .browser__iteraction .btn {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header .browser__iteraction .btn {
   height: 8px;
   width: 8px;
   border-radius: 100%;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header .browser__iteraction .btn.close {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header .browser__iteraction .btn.close {
   background-color: #FF5F56;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header .browser__iteraction .btn.resize {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header .browser__iteraction .btn.resize {
   background-color: #FFBD2E;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header .browser__iteraction .btn.hide {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header .browser__iteraction .btn.hide {
   background-color: #27C93F;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header .browser__search {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header .browser__search {
   width: calc(100% - 40px);
   margin: 0 40px 0 0;
   height: 100%;
@@ -1491,7 +1496,7 @@ header .header__right-side .linkedin:hover {
           justify-content: center;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header .browser__search .search-input {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header .browser__search .search-input {
   width: 260px;
   height: 14px;
   background-color: #202226;
@@ -1507,47 +1512,47 @@ header .header__right-side .linkedin:hover {
           align-items: center;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header .browser__search .search-input span {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header .browser__search .search-input span {
   color: #9B9B9B;
   font-size: 10px;
   line-height: 14px;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__main {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__main {
   height: 100%;
   width: 100%;
   overflow: auto;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__main::-webkit-scrollbar {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__main::-webkit-scrollbar {
   width: 10px;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__main::-webkit-scrollbar-track {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__main::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 0px #202327;
   border-radius: 10px;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__main::-webkit-scrollbar-thumb {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__main::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0px 0px 1px 1px #9B9B9B;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__main .browser__content {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__main .browser__content {
   height: 5000px;
   width: 100%;
   background-color: #000;
   position: relative;
 }
 
-.wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__main .browser__content canvas {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__main .browser__content canvas {
   position: sticky;
   width: 70%;
   left: 15%;
   top: 10%;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side {
   width: 50%;
   height: 400px;
   display: -webkit-box;
@@ -1562,7 +1567,7 @@ header .header__right-side .linkedin:hover {
           justify-content: space-between;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1576,17 +1581,17 @@ header .header__right-side .linkedin:hover {
           justify-content: center;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block .project__header {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__header {
   width: 100%;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block .project__header h2 {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__header h2 {
   color: var(--light);
   font-size: 24px;
   line-height: 36px;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block .project__description {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1597,7 +1602,7 @@ header .header__right-side .linkedin:hover {
   margin: 17px 0 0 0;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block .project__description ul li {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__description ul li {
   color: #9B9B9B;
   font-size: 14px;
   line-height: 18px;
@@ -1605,12 +1610,12 @@ header .header__right-side .linkedin:hover {
   list-style: none;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block .project__description ul li::before {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__description ul li::before {
   content: "✔";
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block {
-  width: 20%;
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block {
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1622,11 +1627,11 @@ header .header__right-side .linkedin:hover {
           align-items: center;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link {
   width: 100%;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked {
   position: relative;
   padding: 5px 10px;
   color: var(--light);
@@ -1641,7 +1646,7 @@ header .header__right-side .linkedin:hover {
   z-index: 1;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked::before {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked::before {
   content: url("../img/svg/arrow-right.svg");
   position: absolute;
   display: -webkit-inline-box;
@@ -1668,7 +1673,7 @@ header .header__right-side .linkedin:hover {
   transition: 0.5s;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover {
   color: var(--dark);
   -webkit-transition-delay: 0.15s;
        -o-transition-delay: 0.15s;
@@ -1678,7 +1683,7 @@ header .header__right-side .linkedin:hover {
           box-shadow: 0 0 0px var(--light);
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover::before {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover::before {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -1689,44 +1694,44 @@ header .header__right-side .linkedin:hover {
           box-shadow: 0 0 10px var(--light), 0 0 30px var(--light), 0 0 60px var(--light);
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span {
   opacity: 0;
   -webkit-transition-delay: 0s;
        -o-transition-delay: 0s;
           transition-delay: 0s;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(1),
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(3) {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(1),
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(3) {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(2),
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(4) {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(2),
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(4) {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(1) {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(1) {
   left: 50%;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(2) {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(2) {
   top: 50%;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(3) {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(3) {
   right: 50%;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(4) {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(4) {
   bottom: 50%;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span {
   position: absolute;
   background: var(--light);
   pointer-events: none;
@@ -1741,19 +1746,19 @@ header .header__right-side .linkedin:hover {
           transition-delay: 0.25s;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(1),
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(3) {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(1),
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(3) {
   width: 15px;
   height: 2px;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(2),
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(4) {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(2),
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(4) {
   width: 2px;
   height: 15px;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(1) {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(1) {
   top: calc(50% - 2px);
   left: -20px;
   -webkit-transform-origin: left;
@@ -1761,7 +1766,7 @@ header .header__right-side .linkedin:hover {
           transform-origin: left;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(2) {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(2) {
   left: calc(50% - 2px);
   top: -20px;
   -webkit-transform-origin: top;
@@ -1769,7 +1774,7 @@ header .header__right-side .linkedin:hover {
           transform-origin: top;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(3) {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(3) {
   top: calc(50% - 2px);
   right: -20px;
   -webkit-transform-origin: right;
@@ -1777,12 +1782,101 @@ header .header__right-side .linkedin:hover {
           transform-origin: right;
 }
 
-.wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(4) {
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(4) {
   left: calc(50% - 2px);
   bottom: -20px;
   -webkit-transform-origin: bottom;
       -ms-transform-origin: bottom;
           transform-origin: bottom;
+}
+
+.wrapper .projects .projects__container .projects-slider .projects-slider__pagination {
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .projects .projects__container .projects-slider .projects-slider__pagination .swiper-pagination {
+  position: inherit;
+}
+
+.wrapper .projects .projects__container .projects-slider .projects-slider__pagination .swiper-pagination .swiper-pagination-bullet {
+  height: 30px;
+  width: 60px;
+  border-radius: 4px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #bb2649;
+  -webkit-box-shadow: 0 0 5px #bb2649, 0 0 5px #bb2649;
+          box-shadow: 0 0 5px #bb2649, 0 0 5px #bb2649;
+  line-height: 30px;
+  padding: 0;
+  border: none;
+  z-index: 2;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  color: #F2F0F1;
+  margin: 0 30px 0 0;
+}
+
+.wrapper .projects .projects__container .projects-slider .projects-slider__pagination .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin: 0;
+}
+
+.wrapper .projects .projects__container .projects-slider .projects-slider__pagination .swiper-pagination .swiper-pagination-bullet:hover {
+  background-color: transparent;
+  color: #bb2649;
+  -webkit-box-shadow: 5px 0px 3px 0px #bb2649, 0 -5px 3px 0px #bb2649, -5px 0px 3px 0px #bb2649, 0 5px 3px 0px #bb2649;
+          box-shadow: 5px 0px 3px 0px #bb2649, 0 -5px 3px 0px #bb2649, -5px 0px 3px 0px #bb2649, 0 5px 3px 0px #bb2649;
+}
+
+.wrapper .projects .projects__container .projects-slider .projects-slider__pagination .swiper-pagination .swiper-pagination-bullet:hover::before,
+.wrapper .projects .projects__container .projects-slider .projects-slider__pagination .swiper-pagination .swiper-pagination-bullet:hover::after {
+  height: 0;
+  background-color: #bb2649;
+}
+
+.wrapper .projects .projects__container .projects-slider .projects-slider__pagination .swiper-pagination .swiper-pagination-bullet::before,
+.wrapper .projects .projects__container .projects-slider .projects-slider__pagination .swiper-pagination .swiper-pagination-bullet::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  margin: 0 0 0 -25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  z-index: -1;
+  background: #bb2649;
+  -webkit-box-shadow: 0 0 5px #bb2649;
+          box-shadow: 0 0 5px #bb2649;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.wrapper .projects .projects__container .projects-slider .projects-slider__pagination .swiper-pagination .swiper-pagination-bullet::before {
+  top: 0;
+}
+
+.wrapper .projects .projects__container .projects-slider .projects-slider__pagination .swiper-pagination .swiper-pagination-bullet::after {
+  bottom: 0;
 }
 
 .wrapper .contact {
@@ -2865,18 +2959,26 @@ header .header__right-side .linkedin:hover {
             transform: translateX(0vw);
   }
 
-  body .wrapper .projects .projects__header {
-    height: 20vh;
-    margin: 0 0 40px 0;
-  }
-
   body .wrapper .projects .projects__container {
     height: auto;
     width: 100%;
     padding: 0 5%;
   }
 
-  body .wrapper .projects .projects__container .project__items {
+  body .wrapper .projects .projects__container .projects__header {
+    height: 20vh;
+    margin: 0 0 40px 0;
+  }
+
+  body .wrapper .projects .projects__container .projects__header h2 {
+    font-size: 25px;
+  }
+
+  body .wrapper .projects .projects__container .projects__header h2 [aria-hidden] .stretch-o {
+    translate: 0 -0.16ch;
+  }
+
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items {
     height: 100%;
     width: 100%;
     padding: 0;
@@ -2895,15 +2997,15 @@ header .header__right-side .linkedin:hover {
         justify-content: space-around;
   }
 
-  body .wrapper .projects .projects__container .project__items:first-child {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items:first-child {
     margin: 0;
   }
 
-  body .wrapper .projects .projects__container .project__items:last-child {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items:last-child {
     padding: 0 0 40px 0;
   }
 
-  body .wrapper .projects .projects__container .project__items.reveal {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items.reveal {
     position: relative;
     -webkit-transform: translateY(150px);
         -ms-transform: translateY(150px);
@@ -2914,52 +3016,53 @@ header .header__right-side .linkedin:hover {
     transition: 1s all ease;
   }
 
-  body .wrapper .projects .projects__container .project__items.reveal.active {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items.reveal.active {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
   }
 
-  body .wrapper .projects .projects__container .project__items._item-3 .project__left-side {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items._item-3 .project__left-side {
     height: 250px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side {
     width: 100%;
     min-height: 200px;
     height: 220px;
     max-height: 250px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .th {
-    left: 11%;
-    width: 77.5%;
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .th {
+    left: 18%;
+    width: 63%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .laptop {
-    width: 100%;
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .laptop {
+    width: 80%;
+    left: 10%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .phone {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .phone {
     height: 65%;
     left: 75%;
     bottom: 0%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .project__browser {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser {
     height: 100%;
     width: 90%;
     margin: 0 auto;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header .browser__iteraction .btn {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header .browser__iteraction .btn {
     height: 5px;
     width: 5px;
     margin: 0 3px 0 0;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header .browser__search {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header .browser__search {
     width: calc(100% - 40px);
     margin: 0 40px 0 0;
     height: 100%;
@@ -2974,7 +3077,7 @@ header .header__right-side .linkedin:hover {
             justify-content: center;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header .browser__search .search-input {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header .browser__search .search-input {
     width: 260px;
     height: 14px;
     background-color: #202226;
@@ -2990,47 +3093,47 @@ header .header__right-side .linkedin:hover {
             align-items: center;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__header .browser__search .search-input span {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__header .browser__search .search-input span {
     color: #9B9B9B;
     font-size: 10px;
     line-height: 14px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__main {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__main {
     height: 100%;
     width: 100%;
     overflow: auto;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__main::-webkit-scrollbar {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__main::-webkit-scrollbar {
     width: 10px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__main::-webkit-scrollbar-track {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__main::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 0px #202327;
     border-radius: 10px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__main::-webkit-scrollbar-thumb {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__main::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0px 0px 1px 1px #9B9B9B;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__main .browser__content {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__main .browser__content {
     height: 5000px;
     width: 100%;
     background-color: #000;
     position: relative;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .project__browser .browser__main .browser__content canvas {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser .browser__main .browser__content canvas {
     position: sticky;
     width: 70%;
     left: 15%;
     top: 10%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side {
     width: 100%;
     height: 100%;
     margin: 20px 0 0 0;
@@ -3038,7 +3141,7 @@ header .header__right-side .linkedin:hover {
         justify-content: space-around;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block {
     width: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3052,16 +3155,16 @@ header .header__right-side .linkedin:hover {
             justify-content: center;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block .project__header {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__header {
     width: 100%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block .project__header h2 {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__header h2 {
     font-size: 20px;
     line-height: 30px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block .project__description {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__description {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3072,7 +3175,7 @@ header .header__right-side .linkedin:hover {
     margin: 17px 0 0 0;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block .project__description ul li {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__description ul li {
     color: #9B9B9B;
     font-size: 14px;
     line-height: 18px;
@@ -3080,15 +3183,15 @@ header .header__right-side .linkedin:hover {
     list-style: none;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block .project__description ul li::before {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__description ul li::before {
     content: "✔";
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block {
     width: 30%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link {
     width: 100%;
     height: 40px;
     display: -webkit-box;
@@ -3102,9 +3205,9 @@ header .header__right-side .linkedin:hover {
             align-items: center;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked {
     position: relative;
-    padding: 5px 10px;
+    padding: 5px 5px;
     color: var(--light);
     border: 1px solid #9B9B9B;
     border-radius: 4px;
@@ -3118,7 +3221,7 @@ header .header__right-side .linkedin:hover {
     font-size: 10px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked::before {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked::before {
     content: url("../img/svg/arrow-right.svg");
     position: absolute;
     display: -webkit-inline-box;
@@ -3145,7 +3248,7 @@ header .header__right-side .linkedin:hover {
     transition: 0.5s;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover {
     color: var(--dark);
     -webkit-transition-delay: 0.15s;
          -o-transition-delay: 0.15s;
@@ -3155,7 +3258,7 @@ header .header__right-side .linkedin:hover {
             box-shadow: 0 0 0px var(--light);
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover::before {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover::before {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
@@ -3166,44 +3269,44 @@ header .header__right-side .linkedin:hover {
             box-shadow: 0 0 10px var(--light), 0 0 30px var(--light), 0 0 60px var(--light);
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span {
     opacity: 0;
     -webkit-transition-delay: 0s;
          -o-transition-delay: 0s;
             transition-delay: 0s;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(1),
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(3) {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(1),
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(3) {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(2),
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(4) {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(2),
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(4) {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0);
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(1) {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(1) {
     left: 50%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(2) {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(2) {
     top: 50%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(3) {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(3) {
     right: 50%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(4) {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked:hover span:nth-child(4) {
     bottom: 50%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span {
     position: absolute;
     background: var(--light);
     pointer-events: none;
@@ -3218,45 +3321,45 @@ header .header__right-side .linkedin:hover {
             transition-delay: 0.25s;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(1),
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(3) {
-    width: 15px;
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(1),
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(3) {
+    width: 10px;
     height: 2px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(2),
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(4) {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(2),
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(4) {
     width: 2px;
-    height: 15px;
+    height: 10px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(1) {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(1) {
     top: calc(50% - 2px);
-    left: -20px;
+    left: -15px;
     -webkit-transform-origin: left;
         -ms-transform-origin: left;
             transform-origin: left;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(2) {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(2) {
     left: calc(50% - 2px);
-    top: -20px;
+    top: -15px;
     -webkit-transform-origin: top;
         -ms-transform-origin: top;
             transform-origin: top;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(3) {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(3) {
     top: calc(50% - 2px);
-    right: -20px;
+    right: -15px;
     -webkit-transform-origin: right;
         -ms-transform-origin: right;
             transform-origin: right;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(4) {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked span:nth-child(4) {
     left: calc(50% - 2px);
-    bottom: -20px;
+    bottom: -15px;
     -webkit-transform-origin: bottom;
         -ms-transform-origin: bottom;
             transform-origin: bottom;
@@ -3743,66 +3846,66 @@ header .header__right-side .linkedin:hover {
     background-image: conic-gradient(from 0deg at 50% 20vh, var(--magenta-to-darken-switch) 0%, #090E16 100%);
   }
 
-  body .wrapper .projects .projects__container .project__items {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items {
     margin: 70px 0 0 0;
     height: 100%;
   }
 
-  body .wrapper .projects .projects__container .project__items._item-3 .project__left-side {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items._item-3 .project__left-side {
     max-height: 260px;
     height: auto;
     min-height: 260px;
   }
 
-  body .wrapper .projects .projects__container .project__items._item-3 .project__left-side .project__browser {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items._item-3 .project__left-side .project__browser {
     height: 260px;
     width: 95%;
   }
 
-  body .wrapper .projects .projects__container .project__items._item-3 .project__right-side {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items._item-3 .project__right-side {
     max-height: 260px;
     height: auto;
     min-height: 260px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side {
     max-height: 220px;
     height: 210px;
     min-height: 200px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .test .project__inner .th {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .test .project__inner .th {
     top: 5%;
     left: 11%;
     width: 73%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .test .project__inner .laptop {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .test .project__inner .laptop {
     width: 95%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .test .project__inner .phone {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .test .project__inner .phone {
     left: 75%;
     bottom: 5%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side {
     max-height: 220px;
     height: 210px;
     min-height: 200px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block {
-    width: 30%;
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block {
+    width: 40%;
     height: 40px;
     margin: auto;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link {
-    height: 100%;
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link {
+    width: 100%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked {
     display: inline-block;
   }
 
@@ -3827,12 +3930,14 @@ header .header__right-side .linkedin:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 852px) and (orientation: landscape) {
   body .wrapper .progress-wrap {
-    bottom: 80px;
+    bottom: 15px;
+    right: 15px;
   }
 
   body .wrapper .intro {
     height: 100%;
     background-image: conic-gradient(from 180deg at 50% 80%, #090E16 0%, var(--magenta-to-darken-switch) 100%);
+    padding: 0 0 20vh 0;
   }
 
   body .wrapper .intro .header .header__left-side {
@@ -3878,80 +3983,83 @@ header .header__right-side .linkedin:hover {
   }
 
   body .wrapper .projects {
-    background-image: conic-gradient(from 0deg at 50% 20vh, var(--magenta-to-darken-switch) 0%, #090E16 100%);
+    background-image: conic-gradient(from 0deg at 50% 40vh, var(--magenta-to-darken-switch) 0%, #090E16 100%);
+    padding: 10vh 0 0 0;
   }
 
-  body .wrapper .projects .projects__container .project__items {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items {
     margin: 70px 0 0 0;
     height: 100%;
   }
 
-  body .wrapper .projects .projects__container .project__items._item-3 .project__left-side {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items._item-3 .project__left-side {
     max-height: 260px;
     height: auto;
     min-height: 260px;
   }
 
-  body .wrapper .projects .projects__container .project__items._item-3 .project__left-side .project__browser {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items._item-3 .project__left-side .project__browser {
     height: 240px;
     width: 95%;
   }
 
-  body .wrapper .projects .projects__container .project__items._item-3 .project__right-side {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items._item-3 .project__right-side {
     max-height: 260px;
     height: auto;
     min-height: 260px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block {
     width: 55%;
     margin: 0 0 0 5%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__synopsis-block .project__header h2 {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__header h2 {
     font-size: 20px;
     line-height: 30px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side {
     max-height: 220px;
     height: 210px;
     min-height: 200px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .test .project__inner .th {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .project__browser {
+    min-height: 350px;
+    max-height: 375px;
+  }
+
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .test .project__inner .th {
     top: 5%;
     left: 11%;
     width: 73%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .test .project__inner .laptop {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .test .project__inner .laptop {
     width: 95%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__left-side .test .project__inner .phone {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side .test .project__inner .phone {
     left: 75%;
     bottom: 5%;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side {
     max-height: 220px;
     height: 210px;
     min-height: 200px;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block {
     width: 30%;
     height: 40px;
     margin: auto;
   }
 
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link {
-    height: 100%;
-  }
-
-  body .wrapper .projects .projects__container .project__items .project__right-side .project__link-block .project__link .btn-blanked {
+  body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked {
     display: inline-block;
+    font-size: 10px;
   }
 
   body .wrapper .contact {
