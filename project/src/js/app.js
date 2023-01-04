@@ -32,7 +32,7 @@ window.addEventListener("scroll", reveal);
 flsFunctions.isWebp();
 
 window.addEventListener("scroll", () => {
-	document.body.style.setProperty("--scroll", window.pageYOffset / window.innerHeight);
+	document.body.style.setProperty("--scroll", window.pageYOffset - window.innerHeight);
 },
 	false
 );
@@ -180,7 +180,7 @@ mainTL
 		updateProgress();
 		$(window).scroll(updateProgress);
 		var offset = 50;
-		var duration = 550;
+		var duration = 150;
 		jQuery(window).on('scroll', function () {
 			if (jQuery(this).scrollTop() > offset) {
 				jQuery('.progress-wrap').addClass('active-progress');
