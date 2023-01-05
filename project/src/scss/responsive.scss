@@ -410,7 +410,7 @@ $lightBgColor: #9B9B9B;
 										left: calc(100% - 150px);
 										margin: -25px 0 0 0;
 										-webkit-user-drag: none;
-										-webkit-user-select: none;
+										user-select: none;
 									}
 
 									.vector-line {
@@ -1476,7 +1476,7 @@ $lightBgColor: #9B9B9B;
 										left: calc(100% - 150px);
 										margin: -25px 0 0 0;
 										-webkit-user-drag: none;
-										-webkit-user-select: none;
+										user-select: none;
 									}
 
 									.vector-line {
@@ -2539,7 +2539,7 @@ $lightBgColor: #9B9B9B;
 										right: 5%;
 										margin: -25px 0 0 0;
 										-webkit-user-drag: none;
-										-webkit-user-select: none;
+										user-select: none;
 									}
 
 									.vector-line {

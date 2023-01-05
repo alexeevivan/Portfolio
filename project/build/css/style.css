@@ -1034,6 +1034,9 @@ header .header__right-side .linkedin:hover {
   margin: -25px 0 0 200px;
   -webkit-user-drag: none;
   -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .wrapper .intro .container .container__right-side .container__experience .container__experience-block .container__header .vector-line {
@@ -1997,6 +2000,11 @@ header .header__right-side .linkedin:hover {
   font-weight: 300;
 }
 
+.wrapper .error_page {
+  width: 100vw;
+  height: 100vh;
+}
+
 /* @keyframes animation
 ==================================================
 */
@@ -2740,6 +2748,9 @@ header .header__right-side .linkedin:hover {
     margin: -25px 0 0 0;
     -webkit-user-drag: none;
     -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 
   body .wrapper .intro .container .container__right-side .container__experience .container__experience-block .container__header .vector-line {
@@ -4148,6 +4159,9 @@ header .header__right-side .linkedin:hover {
     margin: -25px 0 0 0;
     -webkit-user-drag: none;
     -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 
   body .wrapper .intro .container .container__right-side .container__experience .container__experience-block .container__header .vector-line {
@@ -5556,6 +5570,9 @@ header .header__right-side .linkedin:hover {
     margin: -25px 0 0 0;
     -webkit-user-drag: none;
     -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 
   body .wrapper .intro .container .container__right-side .container__experience .container__experience-block .container__header .vector-line {
