@@ -374,7 +374,8 @@ img {
 }
 
 body {
-  background-color: #641c30;
+  background: conic-gradient(from 180deg at 50% 80%, #090e16 0, #bb2649 100%);
+  background-attachment: fixed;
   height: 100%;
   font-family: "Lato";
 }
