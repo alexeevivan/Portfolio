@@ -1349,6 +1349,7 @@ header {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+		background: conic-gradient(from 180deg at 50% 95%, #090e16 0, #bb2649 100%);
 
 		.error-page__hiding {
 			display: flex;

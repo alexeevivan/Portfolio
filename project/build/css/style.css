@@ -2020,6 +2020,7 @@ header .header__right-side .linkedin:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: conic-gradient(from 180deg at 50% 95%, #090e16 0, #bb2649 100%);
 }
 
 .wrapper .error-page .error-page__hiding {
