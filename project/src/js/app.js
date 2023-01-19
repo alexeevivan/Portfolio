@@ -259,6 +259,6 @@ const swiper = new Swiper(".projects-slider", {
 			return '<span class="' + className + '">' + (index + 1) + '</span>';
 		},
 	},
-	simulateTouch: true,
+	simulateTouch: false,
 	loop: false,
 });
