@@ -262,3 +262,21 @@ const swiper = new Swiper(".projects-slider", {
 	simulateTouch: false,
 	loop: false,
 });
+
+$(".about-link").click(function () {
+	$(".projects-link").removeClass("active");
+	$(".contact-link").removeClass("active");
+	$(".about-link").addClass("active");
+});
+
+$(".projects-link").click(function () {
+	$(".about-link").removeClass("active");
+	$(".contact-link").removeClass("active");
+	$(".projects-link").addClass("active");
+});
+
+$(".contact-link").click(function () {
+	$(".projects-link").removeClass("active");
+	$(".about-link").removeClass("active");
+	$(".contact-link").addClass("active");
+});

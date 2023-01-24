@@ -1,0 +1,155 @@
+$mainColor: #17181D;
+$secondaryColor: #bb2649;
+$lightBgColor: #9B9B9B;
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+	body {
+		.wrapper {
+
+			.progress-wrap {
+				bottom: 80px;
+			}
+
+			.intro {
+				background-image: conic-gradient(from 180deg at 50% 80%, #090E16 0%, var(--magenta-to-darken-switch) 100%);
+
+				.header {
+					.header__left-side {
+						width: 50%;
+						height: 100%;
+					}
+
+					.header__right-side {
+						display: none;
+					}
+
+					.glow {
+						height: 140px;
+						width: 140px;
+						top: 35px;
+						left: calc(75% - 70px);
+					}
+
+					.logo,
+					.box>.wave {
+						height: 125px;
+						width: 125px;
+						left: calc(75% - 62.5px);
+						top: 40px;
+					}
+				}
+
+				.container {
+					height: 100%;
+
+					.container__left-side {
+
+						.container__slogan,
+						.container__stack {
+							width: 100%;
+						}
+					}
+				}
+			}
+
+			.projects {
+				background-image: conic-gradient(from 0deg at 50% 20vh, var(--magenta-to-darken-switch) 0%, #090E16 100%);
+
+				.projects__container {
+					.projects-slider {
+						.projects-slider__wrapper {
+							.projects-slider__slide {
+								.project__items {
+									margin: 70px 0 0 0;
+									height: 100%;
+
+									&._item-3 {
+										.project__left-side {
+											max-height: 260px;
+											height: auto;
+											min-height: 260px;
+
+											.project__browser {
+												height: 260px;
+												width: 95%;
+											}
+										}
+
+										.project__right-side {
+											max-height: 260px;
+											height: auto;
+											min-height: 260px;
+										}
+									}
+
+									.project__left-side {
+										max-height: 220px;
+										height: 210px;
+										min-height: 200px;
+
+										.test {
+											.project__inner {
+												.th {
+													top: 5%;
+													left: 11%;
+													width: 73%;
+												}
+
+												.laptop {
+													width: 95%;
+												}
+
+												.phone {
+													left: 75%;
+													bottom: 5%;
+												}
+											}
+										}
+									}
+
+									.project__right-side {
+										max-height: 220px;
+										height: 210px;
+										min-height: 200px;
+
+										.project__link-block {
+											width: 40%;
+											height: 40px;
+											margin: auto;
+
+											.project__link {
+												width: 100%;
+
+												.btn-blanked {
+													display: inline-block;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.contact {
+				min-height: 300px;
+				height: 400px;
+				background: linear-gradient(to right, var(--dark-magenta-to-darken-switch), var(--light-magenta-to-darken-switch));
+
+				.contact__container {
+					text-align: center;
+
+					.line {
+						&::before {
+							width: 100%;
+							left: 0;
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
