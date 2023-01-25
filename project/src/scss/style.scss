@@ -1239,8 +1239,7 @@ header {
 	}
 
 	.contact {
-		min-height: 25vh;
-		height: auto;
+		height: 250px;
 		width: 100%;
 		background: linear-gradient(to right, #551A2C, #721E35);
 
@@ -1284,6 +1283,10 @@ header {
 				line-height: 30px;
 				font-weight: 700;
 				color: var(--light);
+
+				br {
+					display: none;
+				}
 			}
 
 			.contact__links {

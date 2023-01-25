@@ -26,7 +26,7 @@ $lightBgColor: #9B9B9B;
 					.glow {
 						height: 140px;
 						width: 140px;
-						top: 35px;
+						top: 50px;
 						left: calc(75% - 70px);
 					}
 
@@ -35,7 +35,7 @@ $lightBgColor: #9B9B9B;
 						height: 125px;
 						width: 125px;
 						left: calc(75% - 62.5px);
-						top: 40px;
+						top: 62.5px;
 					}
 				}
 
@@ -62,6 +62,9 @@ $lightBgColor: #9B9B9B;
 								.project__items {
 									margin: 70px 0 0 0;
 									height: 100%;
+									flex-direction: column;
+									align-items: center;
+									justify-content: space-around;
 
 									&._item-3 {
 										.project__left-side {
@@ -83,9 +86,6 @@ $lightBgColor: #9B9B9B;
 									}
 
 									.project__left-side {
-										max-height: 220px;
-										height: 210px;
-										min-height: 200px;
 
 										.test {
 											.project__inner {
@@ -108,17 +108,21 @@ $lightBgColor: #9B9B9B;
 									}
 
 									.project__right-side {
-										max-height: 220px;
-										height: 210px;
-										min-height: 200px;
+										height: 240px;
+										width: 70%;
+
+										.project__synopsis-block {
+											width: 70%;
+										}
 
 										.project__link-block {
-											width: 40%;
-											height: 40px;
+											width: 30%;
+											height: auto;
 											margin: auto;
+											text-align: center;
 
 											.project__link {
-												width: 100%;
+												width: auto;
 
 												.btn-blanked {
 													display: inline-block;
@@ -134,8 +138,7 @@ $lightBgColor: #9B9B9B;
 			}
 
 			.contact {
-				min-height: 300px;
-				height: 400px;
+				height: 250px;
 				background: linear-gradient(to right, var(--dark-magenta-to-darken-switch), var(--light-magenta-to-darken-switch));
 
 				.contact__container {
@@ -146,6 +149,50 @@ $lightBgColor: #9B9B9B;
 							width: 100%;
 							left: 0;
 							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 929.98px) and (orientation: portrait) {
+	body {
+		.wrapper {
+			.projects {
+				.projects__container {
+					.projects-slider {
+						.projects-slider__wrapper {
+							.projects-slider__slide {
+								.project__items {
+									.project__left-side {
+										height: 240px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 930px) and (max-width: 991.98px) and (orientation: portrait) {
+	body {
+		.wrapper {
+			.projects {
+				.projects__container {
+					.projects-slider {
+						.projects-slider__wrapper {
+							.projects-slider__slide {
+								.project__items {
+									.project__left-side {
+										height: 265px;
+									}
+								}
+							}
 						}
 					}
 				}
