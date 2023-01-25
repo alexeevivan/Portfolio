@@ -46,9 +46,9 @@ $secondaryColor: #bb2649;
 // ================================================================================================
 $lightBgColor: #9B9B9B;
 
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) {}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {}
 
-@media only screen and (min-width: 768px) and (max-width: 852.98px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 852.98px) and (orientation: landscape) {
 	body {
 		.wrapper {
 
@@ -229,7 +229,7 @@ $lightBgColor: #9B9B9B;
 	}
 }
 
-@media only screen and (min-width: 853px) and (max-width: 991.98px) and (orientation: landscape) {
+@media screen and (min-width: 853px) and (max-width: 991.98px) and (orientation: landscape) {
 	body {
 		.wrapper {
 

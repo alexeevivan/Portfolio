@@ -2,7 +2,7 @@ $mainColor: #17181D;
 $secondaryColor: #bb2649;
 $lightBgColor: #9B9B9B;
 
-@media only screen and (min-width:380px) and (max-width:479.98px) and (orientation: portrait) {
+@media screen and (min-width:380px) and (max-width:479.98px) and (orientation: portrait) {
 	body {
 
 		.wrapper {
