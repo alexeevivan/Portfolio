@@ -1,8 +1,9 @@
 @import "null";
-@import "mobile view resolutions/320-380";
-@import "mobile view resolutions/380-480";
-@import "mobile view resolutions/480-768";
-@import "mobile view resolutions/768-992";
+@import "mobile view resolutions/portrait/380-portrait";
+@import "mobile view resolutions/portrait/480-portrait";
+@import "mobile view resolutions/portrait/768-portrait";
+@import "mobile view resolutions/portrait/992-portrait";
+@import "mobile view resolutions/landscape/380-landscape.scss";
 @import "mobile-view-keyframes";
 // ================================================================================================
 // Variables

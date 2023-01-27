@@ -65,6 +65,16 @@ header {
 	min-height: 250px;
 	height: 15vh;
 
+	#burger-toggle,
+	.burger-menu,
+	.overlay {
+		display: none;
+	}
+
+	.burger-menu {
+		display: none;
+	}
+
 	.header__left-side {
 		height: calc(100% - 50px);
 		width: 25%;
@@ -258,6 +268,7 @@ header {
 	min-height: auto;
 	max-width: 1440px;
 	margin: 0 auto;
+
 
 	/* Switch to top
 	==================================================
