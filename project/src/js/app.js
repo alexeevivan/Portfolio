@@ -6,18 +6,43 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
+flsFunctions.isWebp();
 
+
+// ==========================================================
+// Changin overflow values via Burger Toggle
+// ==========================================================
+const body = document.querySelector("body");
+const burgerToggle = document.getElementsByClassName("burger__toggle");
+
+function count() {
+	let counter = 0;
+	return function () {
+		return counter += 1;
+	};
+};
+
+for (let button of burgerToggle) {
+	const counter = count(); // создаем отдельный инстанс функции счетчика для каждой кнопки
+	button.addEventListener("click", function () {
+		if (counter() % 2 == 0) {
+			body.style.overflow = "auto";
+		} else {
+			body.style.overflow = "hidden";
+		};
+	});
+};
 
 // ==========================================================
 // Reveal
 // ==========================================================
 function reveal() {
-	var reveals = document.querySelectorAll(".reveal");
+	let reveals = document.querySelectorAll(".reveal");
 
-	for (var i = 0; i < reveals.length; i++) {
-		var windowHeight = window.innerHeight;
-		var elementTop = reveals[i].getBoundingClientRect().top;
-		var elementVisible = 10;
+	for (let i = 0; i < reveals.length; i++) {
+		let windowHeight = window.innerHeight;
+		let elementTop = reveals[i].getBoundingClientRect().top;
+		let elementVisible = 10;
 
 		if (elementTop < windowHeight - elementVisible) {
 			reveals[i].classList.add("active");
@@ -28,10 +53,6 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-
-
-flsFunctions.isWebp();
-
 window.addEventListener("scroll", () => {
 	document.body.style.setProperty("--scroll", window.pageYOffset - window.innerHeight);
 },
@@ -60,14 +81,14 @@ function removeLoader() {
 const root = document.documentElement;
 const changeBtn = document.getElementById('changeBtn');
 let mode = false;
-
 let whiteColor = getComputedStyle(root).getPropertyValue("--light");
 let blackColor = getComputedStyle(root).getPropertyValue("--dark");
 let darkenColor = getComputedStyle(root).getPropertyValue("--darken");
 let magentaColor = getComputedStyle(root).getPropertyValue("--magenta");
 let darkMagentaColor = getComputedStyle(root).getPropertyValue("--dark-magenta");
 let lightMagentaColor = getComputedStyle(root).getPropertyValue("--light-magenta");
-
+let githubLogo = document.getElementsByClassName("github__logo");
+let linkedinLogo = document.getElementsByClassName("linkedin__logo");
 
 changeBtn.addEventListener('click', (e) => changeColor());
 
@@ -80,6 +101,8 @@ function changeColor() {
 		root.style.setProperty('--darken-to-magenta-switch', magentaColor);
 		root.style.setProperty('--dark-magenta-to-darken-switch', darkenColor);
 		root.style.setProperty('--light-magenta-to-darken-switch', darkenColor);
+		$(githubLogo).addClass("inverted");
+		$(linkedinLogo).addClass("inverted");
 	} else {
 		root.style.setProperty('--light-to-switch', whiteColor);
 		root.style.setProperty('--dark-to-switch', blackColor);
@@ -87,9 +110,14 @@ function changeColor() {
 		root.style.setProperty('--darken-to-magenta-switch', darkenColor);
 		root.style.setProperty('--dark-magenta-to-darken-switch', darkMagentaColor);
 		root.style.setProperty('--light-magenta-to-darken-switch', lightMagentaColor);
+		$(githubLogo).removeClass("inverted");
+		$(linkedinLogo).removeClass("inverted");
 	}
-}
+};
 
+// ==========================================================
+// Sliding change slogan
+// ==========================================================
 const slideTL = gsap.timeline();
 const maskTL = gsap.timeline();
 const mainTL = gsap.timeline({
@@ -165,23 +193,23 @@ mainTL
 	$(document).ready(function () {
 		"use strict";
 		// ------------------------ Scroll back to top
-		var progressPath = document.querySelector('.progress-wrap path');
-		var pathLength = progressPath.getTotalLength();
+		let progressPath = document.querySelector('.progress-wrap path');
+		let pathLength = progressPath.getTotalLength();
 		progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
 		progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
 		progressPath.style.strokeDashoffset = pathLength;
 		progressPath.getBoundingClientRect();
 		progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
-		var updateProgress = function () {
-			var scroll = $(window).scrollTop();
-			var height = $(document).height() - $(window).height();
-			var progress = pathLength - (scroll * pathLength / height);
+		let updateProgress = function () {
+			let scroll = $(window).scrollTop();
+			let height = $(document).height() - $(window).height();
+			let progress = pathLength - (scroll * pathLength / height);
 			progressPath.style.strokeDashoffset = progress;
 		}
 		updateProgress();
 		$(window).scroll(updateProgress);
-		var offset = 50;
-		var duration = 150;
+		let offset = 50;
+		let duration = 150;
 		jQuery(window).on('scroll', function () {
 			if (jQuery(this).scrollTop() > offset) {
 				jQuery('.progress-wrap').addClass('active-progress');
@@ -195,7 +223,6 @@ mainTL
 			return false;
 		})
 	});
-
 })(jQuery);
 
 // ==========================================================
@@ -205,11 +232,9 @@ console.clear();
 
 const canvas = document.getElementById("apple-device");
 const context = canvas.getContext("2d");
-
+const frameCount = 147;
 canvas.width = 1158;
 canvas.height = 770;
-
-const frameCount = 147;
 const currentFrame = index => (
 	`https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${(index + 1).toString().padStart(4, '0')}.jpg`
 );

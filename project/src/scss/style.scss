@@ -65,15 +65,6 @@ header {
 	min-height: 250px;
 	height: 15vh;
 
-	#burger-toggle,
-	.burger-menu,
-	.overlay {
-		display: none;
-	}
-
-	.burger-menu {
-		display: none;
-	}
 
 	.header__left-side {
 		height: calc(100% - 50px);
@@ -252,6 +243,8 @@ header {
 				width: 100%;
 
 				img {
+					display: inline-block !important;
+					background-color: transparent !important;
 					width: 75px;
 					height: 75px;
 				}
@@ -269,6 +262,9 @@ header {
 	max-width: 1440px;
 	margin: 0 auto;
 
+	.burger {
+		display: none;
+	}
 
 	/* Switch to top
 	==================================================
@@ -1323,6 +1319,8 @@ header {
 
 					a {
 						img {
+							display: inline-block !important;
+							background-color: transparent !important;
 							width: 50px;
 							transition: .5s ease-in-out;
 						}
