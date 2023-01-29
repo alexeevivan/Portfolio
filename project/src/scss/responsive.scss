@@ -13,25 +13,55 @@ $highdensity: only screen and (-webkit-min-device-pixel-ratio: 1.5),
 	only screen and (-o-min-device-pixel-ratio: 3/2),
 	only screen and (min-device-pixel-ratio: 1.5);
 // ================================================================================================
+// Phones Extra S
+$mobile-xs: media only screen and (min-width:320px) and (max-width:379.98px) and (orientation: portrait);
 // Phones S
 // ================================================================================================
-$mobile-s: only screen and (max-width: 479.98px);
+$mobile-s: media only screen and (min-width:380px) and (max-width:479.98px) and (orientation: portrait);
+// Phones M
 // ================================================================================================
+$mobile-m: only screen and (min-width:480px) and (max-width:767.98px);
 // Phones L
 // ================================================================================================
-$mobile-l: only screen and (min-width: 480px) and (max-width: 767.98px);
+$mobile-l: only screen and (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait);
 // ================================================================================================
-// Tablets & some phones in landscape mode
-// ================================================================================================
-$tablet: only screen and (min-width: 768px) and (max-width: 991.98px);
-// ================================================================================================
-// PC-s, laptops & some tablets in port mode
+// PC-s, laptops & some tablets in portrait mode
 // ================================================================================================
 $desktop: only screen and (min-width: 1200px) and (max-width: 1399.98px);
 // ================================================================================================
 // Large screen PC
 // ================================================================================================
 $desktop: only screen and (min-width: 1400px);
+
+// ================================================================================================
+// iPhone Sizes (Portrait)
+// ================================================================================================
+// 4.7" iPhone SE / iPhone 6 / iPhone 6s / iPhone 7 / iPhone 8
+@media only screen and (device-width: 375px) and (device-width: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+// iPhone 6 Plus / iPhone 6s Plus / iPhone 7 Plus / iPhone 8 Plus
+@media only screen and (device-width: 414px) and (device-width: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+// iPhone X / iPhone XS / iPhone 11 Pro / iPhone 12 mini / iPhone 13 mini
+@media only screen and (device-width: 375px) and (device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+// iPhone XR / iPhone 11
+@media only screen and (device-width: 414px) and (device-width: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+// iPhone XS Max / iPhone 11 Pro Max 
+@media only screen and (device-width: 414px) and (device-width: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+// iPhone 12 / iPhone 12 Pro / iPhone 13 / iPhone 13 Pro / iPhone 14
+@media only screen and (device-width: 390px) and (device-width: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+// iPhone 12 Pro Max / iPhone 13 Pro Max / iPhone 14 Plus
+@media only screen and (device-width: 428px) and (device-width: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+// iPhone 14 Pro
+@media only screen and (device-width: 393px) and (device-width: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+// iPhone 14 Pro Max
+@media only screen and (device-width: 430px) and (device-width: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
 
 // ================================================================================================
 // Code

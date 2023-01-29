@@ -2951,7 +2951,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 379.98px) and (orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 379.98px) and (orientation: portrait) {
   body .wrapper {
     min-height: 100%;
   }
@@ -4032,7 +4032,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 369.98px) and (orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 369.98px) and (orientation: portrait) {
   body .wrapper .intro .container .container__left-side .container__slogan .container__item-1 .text-block h1 {
     font-size: 11px;
   }
@@ -4042,7 +4042,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 379.98px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 379.98px) and (orientation: landscape) {
   body .wrapper {
     min-height: 100%;
   }
@@ -5106,7 +5106,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media screen and (min-width: 380px) and (max-width: 479.98px) and (orientation: portrait) {
+@media only screen and (min-width: 380px) and (max-width: 479.98px) and (orientation: portrait) {
   body .wrapper {
     min-height: 100%;
   }
@@ -6180,7 +6180,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
+@media only screen and (min-width: 480px) and (max-width: 767.98px) {
   body .wrapper {
     min-height: 100%;
   }
@@ -7293,7 +7293,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 538.98px) {
+@media only screen and (min-width: 480px) and (max-width: 538.98px) {
   body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side {
     height: 220px;
   }
@@ -7303,7 +7303,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media screen and (min-width: 539px) and (max-width: 599.98px) {
+@media only screen and (min-width: 539px) and (max-width: 599.98px) {
   body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side {
     max-height: 245px;
   }
@@ -7313,7 +7313,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 679.98px) {
+@media only screen and (min-width: 600px) and (max-width: 679.98px) {
   body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side {
     max-height: 270px;
   }
@@ -7323,7 +7323,7 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media screen and (min-width: 680px) and (max-width: 767.98px) {
+@media only screen and (min-width: 680px) and (max-width: 767.98px) {
   body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side {
     max-height: 320px;
   }
@@ -7338,14 +7338,14 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 767.98px) {
+@media only screen and (min-width: 600px) and (max-width: 767.98px) {
   body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block .project__link .btn-blanked {
     padding: 10px;
     font-size: 12px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
   body .wrapper .progress-wrap {
     bottom: 80px;
   }
@@ -7479,13 +7479,13 @@ header .header__right-side .linkedin:hover {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 929.98px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 929.98px) and (orientation: portrait) {
   body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side {
     height: 240px;
   }
 }
 
-@media screen and (min-width: 930px) and (max-width: 991.98px) and (orientation: portrait) {
+@media only screen and (min-width: 930px) and (max-width: 991.98px) and (orientation: portrait) {
   body .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__left-side {
     height: 265px;
   }

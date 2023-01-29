@@ -7,6 +7,7 @@ Swiper.use([Navigation, Pagination]);
 gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
 flsFunctions.isWebp();
+alert(document.cookie);
 
 
 // ==========================================================
