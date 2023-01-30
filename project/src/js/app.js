@@ -10,6 +10,58 @@ gsap.registerPlugin(ScrollTrigger);
 flsFunctions.isWebp();
 
 // ==========================================================
+// SSL
+// ==========================================================
+// let pkg = require("../../package.json");
+let pkg = require('./package.json');
+let Greenlock = require("greenlock");
+let greenlock = Greenlock.create({
+	packageRoot: __dirname,
+	configDir: "./greenlock.d/",
+	packageAgent: pkg.name + '/' + pkg.version,
+	maintainerEmail: pkg.author,
+	staging: true,
+	notify: function (event, details) {
+		if ('error' === event) {
+			// `details` is an error object in this case
+			console.error(details);
+		}
+	}
+});
+let altnames = ["alexeevivan.com", "www.alexeevivan.com"];
+
+greenlock.manager
+	.defaults({
+		agreeToTerms: true,
+		subscriberEmail: "alexeevivan92@gmail.com"
+	})
+	.then(function (fullConfig) {
+		// ...
+	});
+
+greenlock
+	.add({
+		subject: altnames[0],
+		altnames: altnames
+	})
+	.then(function () {
+		// saved config to db (or file system)
+	});
+
+greenlock
+	.get({ servername: subject })
+	.then(function (pems) {
+		if (pems && pems.privkey && pems.cert && pems.chain) {
+			console.info("Success");
+		}
+		//console.log(pems);
+	})
+	.catch(function (e) {
+		console.error("Big bad error:", e.code);
+		console.error(e);
+	});
+
+// ==========================================================
 // Changin overflow values via Burger Toggle
 // ==========================================================
 const body = document.querySelector("body");
