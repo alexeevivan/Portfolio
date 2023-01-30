@@ -1,16 +1,37 @@
-domains:
-- domain: alexeevivan.com
-  type: PRIMARY
-  zone: alexeevivan.com
-name: portfolio-app
-region: fra
-static_sites:
-- environment_slug: html
-  github:
-    branch: main
-    deploy_on_push: true
-    repo: alexeevivan/Portfolio
-  name: portfolio
-  routes:
-  - path: /
-  source_dir: /project/build/
+# domains:
+# - domain: alexeevivan.com
+#   type: PRIMARY
+#   zone: alexeevivan.com
+# name: portfolio-app
+# region: fra
+# static_sites:
+# - environment_slug: html
+#   github:
+#     branch: main
+#     deploy_on_push: true
+#     repo: alexeevivan/Portfolio
+#   name: portfolio
+#   routes:
+#   - path: /
+#   source_dir: /project/build/
+name: Build & Deploy
+ on:
+   push:
+     branches: [master]
+
+ jobs:
+   deploy:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Deploy Portfolio Web-Site
+         uses: alexeevivan/ssh-action@v0.1.2
+         with:
+           host: ${{secrets.SSH_HOST}}
+           key: ${{secrets.SSH_KEY}}
+           username: ${{secrets.SSH_USERNAME}}
+
+           script:
+               mkdir test #create folder u want to deploy to in the live server
+               cd test #enter or cd into the folder
+               git clone git@github.com:alexeevivan/Portfolio.git #clone repository into the folder
+               echo 'Deployment successful to Digital Ocean' #Message to be displayed is successful
