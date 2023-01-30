@@ -1,3 +1,4 @@
+"use strict";
 import * as flsFunctions from "./modules/functions.js";
 import { gsap } from "gsap";
 import { PixiPlugin } from "gsap/PixiPlugin.js";
@@ -7,8 +8,6 @@ Swiper.use([Navigation, Pagination]);
 gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
 flsFunctions.isWebp();
-alert(document.cookie);
-
 
 // ==========================================================
 // Changin overflow values via Burger Toggle

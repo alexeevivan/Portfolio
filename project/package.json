@@ -49,6 +49,7 @@
 		"gulp-if": "^3.0.0",
 		"gulp-svg-sprite": "^2.0.1",
 		"jquery": "^3.6.1",
+		"openssl-nodejs": "^1.0.5",
 		"swiper": "^8.4.5"
 	}
 }
