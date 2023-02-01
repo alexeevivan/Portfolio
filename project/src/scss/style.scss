@@ -24,7 +24,7 @@ $mainColor: #17181D;
 // ================================================================================================
 // Secondary color
 // ================================================================================================
-$secondaryColor: #bb2649;
+$secondaryColor: var(--magenta);
 // ================================================================================================
 // Additional background color
 // ================================================================================================
@@ -34,7 +34,7 @@ $lightBgColor: #9B9B9B;
 // PC-styling
 // ================================================================================================
 body {
-	background: conic-gradient(from 180deg at 50% 80%, #090e16 0, #bb2649 100%);
+	background: conic-gradient(from 180deg at 50% 80%, #090e16 0, var(--magenta) 100%);
 	background-attachment: fixed;
 	height: 100%;
 	font-family: "Lato";
@@ -641,7 +641,7 @@ header {
 									display: block;
 									height: 3px;
 									width: 30%;
-									background: linear-gradient(to right, #bb2649, transparent);
+									background: linear-gradient(to right, var(--magenta), transparent);
 								}
 							}
 
@@ -1361,7 +1361,7 @@ header {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		background: conic-gradient(from 180deg at 50% 95%, #090e16 0, #bb2649 100%);
+		background: conic-gradient(from 180deg at 50% 95%, #090e16 0, var(--magenta) 100%);
 
 		.error-page__hiding {
 			display: flex;
