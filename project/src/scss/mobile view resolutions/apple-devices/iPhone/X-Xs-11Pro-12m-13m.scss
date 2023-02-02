@@ -3,7 +3,7 @@ $mainColor: #17181D;
 $secondaryColor: #bb2649;
 $lightBgColor: #9B9B9B;
 
-@media only screen and (max-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
 	body {
@@ -90,54 +90,81 @@ $lightBgColor: #9B9B9B;
 							transition: width, 0.5s;
 						}
 					}
-				}
-			}
 
-			.burger__menu-items {
-				position: fixed;
-				z-index: 100;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				margin: 0;
-				padding: 100px;
-				background: var(--light-to-switch);
-				list-style-type: none;
-				transform: translate(-100%, 0%);
-				transform-origin: 0% 0%;
-				transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				justify-content: center;
+					.burger__menu-items {
+						position: fixed;
+						z-index: 100;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						margin: 0;
+						padding: 100px;
+						background: var(--light-to-switch);
+						list-style-type: none;
+						transform: translate(-100%, 0%);
+						transform-origin: 0% 0%;
+						transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						grid-template-rows: 75% 25%;
 
-				.github,
-				.linkedin {
-					height: 100%;
-					width: 50%;
-					display: flex;
-					align-items: center;
-					justify-content: center;
+						.github,
+						.linkedin {
+							height: 100%;
+							width: 50%;
+							margin: 0 auto;
+							display: flex;
+							align-items: center;
+							justify-content: center;
 
-					a {
-						display: inline-flex;
-						justify-content: center;
-						height: 50%;
-						width: 50%;
-						padding: 10px 0;
-						font-size: 30px;
-						color: var(--dark-to-switch);
+							a {
+								display: inline-flex;
+								justify-content: center;
+								align-items: center;
+								height: 100%;
+								width: 50%;
+								padding: 10px 0;
+								font-size: 30px;
+								color: var(--dark-to-switch);
 
-						.github__logo,
-						.linkedin__logo {
-							display: inline-block;
-							background-color: transparent;
-							width: 50px;
-							filter: invert(1);
+								.github__logo,
+								.linkedin__logo {
+									display: inline-block;
+									background-color: transparent;
+									width: 60px;
+									height: 60px;
+									filter: invert(1);
 
-							&.inverted {
-								filter: invert(0);
+									&.inverted {
+										filter: invert(0) drop-shadow(9px 6px 3px var(--light));
+									}
+								}
+							}
+						}
+
+						.digital-ocean {
+							grid-column-start: 1;
+							grid-column-end: 3;
+							grid-row-start: 2;
+							width: 100%;
+							height: 100%;
+							text-align: center;
+
+							a {
+								display: inline-block;
+								height: 100%;
+								max-width: 100%;
+								width: auto;
+
+								img {
+									display: inline !important;
+									width: auto;
+									height: 100%;
+									border-radius: 10px;
+									border: 1px solid var(--dark-to-switch);
+									filter: grayscale(1);
+								}
 							}
 						}
 					}
@@ -156,10 +183,12 @@ $lightBgColor: #9B9B9B;
 
 					.box {
 						.wave {
+							background-color: var(--light-to-switch);
 							height: 90px;
 							width: 90px;
 							left: 80%;
 							top: 30px;
+							border: 1px solid var(--dark-to-switch);
 						}
 					}
 

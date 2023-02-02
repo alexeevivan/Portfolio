@@ -9079,7 +9079,7 @@ header .header__right-side .linkedin:hover {
     transition: width, 0.5s;
   }
 
-  body .wrapper .burger__menu-items {
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items {
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -9101,25 +9101,19 @@ header .header__right-side .linkedin:hover {
     -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 75% 25%;
+    grid-template-rows: 75% 25%;
   }
 
-  body .wrapper .burger__menu-items .github,
-  body .wrapper .burger__menu-items .linkedin {
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .github,
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .linkedin {
     height: 100%;
     width: 50%;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9131,38 +9125,71 @@ header .header__right-side .linkedin:hover {
             justify-content: center;
   }
 
-  body .wrapper .burger__menu-items .github a,
-  body .wrapper .burger__menu-items .linkedin a {
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .github a,
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .linkedin a {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
     width: 50%;
     padding: 10px 0;
     font-size: 30px;
     color: var(--dark-to-switch);
   }
 
-  body .wrapper .burger__menu-items .github a .github__logo,
-  body .wrapper .burger__menu-items .github a .linkedin__logo,
-  body .wrapper .burger__menu-items .linkedin a .github__logo,
-  body .wrapper .burger__menu-items .linkedin a .linkedin__logo {
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .github a .github__logo,
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .github a .linkedin__logo,
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .linkedin a .github__logo,
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .linkedin a .linkedin__logo {
     display: inline-block;
     background-color: transparent;
-    width: 50px;
+    width: 60px;
+    height: 60px;
     -webkit-filter: invert(1);
             filter: invert(1);
   }
 
-  body .wrapper .burger__menu-items .github a .github__logo.inverted,
-  body .wrapper .burger__menu-items .github a .linkedin__logo.inverted,
-  body .wrapper .burger__menu-items .linkedin a .github__logo.inverted,
-  body .wrapper .burger__menu-items .linkedin a .linkedin__logo.inverted {
-    -webkit-filter: invert(0);
-            filter: invert(0);
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .github a .github__logo.inverted,
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .github a .linkedin__logo.inverted,
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .linkedin a .github__logo.inverted,
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .linkedin a .linkedin__logo.inverted {
+    -webkit-filter: invert(0) drop-shadow(9px 6px 3px var(--light));
+            filter: invert(0) drop-shadow(9px 6px 3px var(--light));
+  }
+
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .digital-ocean {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .digital-ocean a {
+    display: inline-block;
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+  }
+
+  body .wrapper .burger .burger__menu-toggle .burger__menu-items .digital-ocean a img {
+    display: inline !important;
+    width: auto;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--dark-to-switch);
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
   }
 
   body .wrapper .intro .header {
@@ -9179,10 +9206,12 @@ header .header__right-side .linkedin:hover {
   }
 
   body .wrapper .intro .header .box .wave {
+    background-color: var(--light-to-switch);
     height: 90px;
     width: 90px;
     left: 80%;
     top: 30px;
+    border: 1px solid var(--dark-to-switch);
   }
 
   body .wrapper .intro .header .logo {
