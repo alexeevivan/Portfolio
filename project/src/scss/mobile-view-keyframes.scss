@@ -181,3 +181,209 @@
 		text-shadow: inherit;
 	}
 }
+
+@keyframes gradientBorder {
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+@keyframes loaderPortrait1 {
+	0% {
+		width: 0px;
+		bottom: 0px;
+		background-color: var(--dark);
+	}
+
+	50% {
+		width: 60px;
+		bottom: 20%;
+		background-color: var(--magenta);
+	}
+
+	100% {
+		width: 10px;
+		bottom: 0px;
+		background-color: var(--dark);
+	}
+}
+
+@keyframes loaderPortrait2 {
+	0% {
+		width: 2px;
+		bottom: 0px;
+		background-color: var(--dark);
+	}
+
+	50% {
+		width: 50px;
+		bottom: 20%;
+		background-color: var(--magenta);
+	}
+
+	100% {
+		width: 10px;
+		bottom: 0px;
+		background-color: var(--dark);
+	}
+}
+
+@keyframes loaderPortrait3 {
+	0% {
+		width: 4px;
+		bottom: 0px;
+		background-color: var(--dark);
+	}
+
+	50% {
+		width: 40px;
+		bottom: 20%;
+		background-color: var(--magenta);
+	}
+
+	100% {
+		width: 10px;
+		bottom: 0px;
+		background-color: var(--dark);
+	}
+}
+
+@keyframes loaderPortrait4 {
+	0% {
+		width: 6px;
+		bottom: 0px;
+		background-color: var(--dark);
+	}
+
+	50% {
+		width: 30px;
+		bottom: 20%;
+		background-color: var(--magenta);
+	}
+
+	100% {
+		width: 10px;
+		bottom: 0px;
+		background-color: var(--dark);
+	}
+}
+
+@keyframes loaderPortrait5 {
+	0% {
+		width: 8px;
+		bottom: 0px;
+		background-color: var(--dark);
+	}
+
+	50% {
+		width: 20px;
+		bottom: 20%;
+		background-color: var(--magenta);
+	}
+
+	100% {
+		width: 10px;
+		bottom: 0px;
+		background-color: var(--dark);
+	}
+}
+
+@keyframes loaderPortrait6 {
+	0% {
+		width: 0px;
+		top: 0px;
+		background-color: var(--dark);
+	}
+
+	50% {
+		width: 20px;
+		top: 20%;
+		background-color: var(--magenta);
+	}
+
+	100% {
+		width: 10px;
+		top: 0px;
+		background-color: var(--dark);
+	}
+}
+
+@keyframes loaderPortrait7 {
+	0% {
+		width: 2px;
+		top: 0px;
+		background-color: var(--dark);
+	}
+
+	50% {
+		width: 30px;
+		top: 20%;
+		background-color: var(--magenta);
+	}
+
+	100% {
+		width: 10px;
+		top: 0px;
+		background-color: var(--dark);
+	}
+}
+
+@keyframes loaderPortrait8 {
+	0% {
+		width: 4px;
+		top: 0px;
+		background-color: var(--dark);
+	}
+
+	50% {
+		width: 40px;
+		top: 20%;
+		background-color: var(--magenta);
+	}
+
+	100% {
+		width: 10px;
+		top: 0px;
+		background-color: var(--dark);
+	}
+}
+
+@keyframes loaderPortrait9 {
+	0% {
+		width: 6px;
+		top: 0px;
+		background-color: var(--dark);
+	}
+
+	50% {
+		width: 50px;
+		top: 20%;
+		background-color: var(--magenta);
+	}
+
+	100% {
+		width: 10px;
+		top: 0px;
+		background-color: var(--dark);
+	}
+}
+
+@keyframes loaderPortrait10 {
+	0% {
+		width: 8px;
+		top: 0px;
+		background-color: var(--dark);
+	}
+
+	50% {
+		width: 60px;
+		top: 20%;
+		background-color: var(--magenta);
+	}
+
+	100% {
+		width: 10px;
+		top: 0px;
+		background-color: var(--dark);
+	}
+}

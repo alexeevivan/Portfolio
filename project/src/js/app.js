@@ -67,10 +67,10 @@ $.get("../html/loader.html", function (data) {
 });
 
 $(window).on('load', function () {
-	setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+	setTimeout(removeLoader, 250000); //wait for page load PLUS two & a half seconds.
 });
 function removeLoader() {
-	$(".loader-wrapper").fadeOut(1000, function () {
+	$(".loader-wrapper").fadeOut(500, function () {
 		// fadeOut complete. Remove the loading div
 		$(".loader-wrapper").remove(); //makes page more lightweight 
 	});

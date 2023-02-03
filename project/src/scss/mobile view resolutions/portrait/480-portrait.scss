@@ -134,6 +134,117 @@ $lightBgColor: #9B9B9B;
 				}
 			}
 
+			.loader-wrapper {
+				.loader {
+					width: 70%;
+					flex-direction: column;
+
+					span {
+
+						&:nth-of-type(1),
+						&:nth-of-type(2),
+						&:nth-of-type(3),
+						&:nth-of-type(4),
+						&:nth-of-type(5),
+						&:nth-of-type(6),
+						&:nth-of-type(7),
+						&:nth-of-type(8),
+						&:nth-of-type(9),
+						&:nth-of-type(10) {
+							width: 60px;
+							height: 10px;
+							margin: 10px 0;
+						}
+
+						&:nth-of-type(1) {
+							animation: loaderPortrait1 2s ease infinite;
+						}
+
+						&:nth-of-type(2) {
+							animation: loaderPortrait2 2s ease infinite;
+						}
+
+						&:nth-of-type(3) {
+							animation: loaderPortrait3 2s ease infinite;
+						}
+
+						&:nth-of-type(4) {
+							animation: loaderPortrait4 2s ease infinite;
+						}
+
+						&:nth-of-type(5) {
+							animation: loaderPortrait5 2s ease infinite;
+						}
+
+						&:nth-of-type(6) {
+							animation: loaderPortrait6 2s ease infinite;
+						}
+
+						&:nth-of-type(7) {
+							animation: loaderPortrait7 2s ease infinite;
+						}
+
+						&:nth-of-type(8) {
+							animation: loaderPortrait8 2s ease infinite;
+						}
+
+						&:nth-of-type(9) {
+							animation: loaderPortrait9 2s ease infinite;
+						}
+
+						&:nth-of-type(10) {
+							animation: loaderPortrait10 2s ease infinite;
+						}
+					}
+
+					p {
+						font-size: 24px;
+						display: inline;
+						text-align: center;
+						border-width: 3px;
+						padding: 10%;
+						position: relative;
+						background-color: var(--dark);
+						border-radius: 30px;
+						width: 100%;
+
+						&::after {
+							content: "";
+							position: absolute;
+							height: calc(100% + 3px);
+							width: calc(100% + 3px);
+							top: -1.5px;
+							left: -1.5px;
+							z-index: -1;
+							background: linear-gradient(45deg, var(--color-1), var(--color-2), var(--color-3), var(--magenta));
+							background-size: 300% 300%;
+							background-position: 0% 50%;
+							animation: gradientBorder 4s alternate infinite;
+							border-radius: 25px;
+						}
+
+						span {
+
+							&:nth-of-type(1),
+							&:nth-of-type(2) {
+								height: auto;
+								width: auto;
+							}
+
+							&:nth-of-type(1) {
+								animation: blinkLoader 2s infinite;
+								margin: 0 10px 0 0;
+							}
+
+							&:nth-of-type(2) {
+								animation: blinkLoader 3s infinite;
+								margin: 0 0 0 10px;
+							}
+						}
+					}
+				}
+			}
+
 			.progress-wrap {
 				position: fixed;
 				right: 7.5px;
@@ -921,6 +1032,20 @@ $lightBgColor: #9B9B9B;
 						h3 {
 							font-size: calc(var(--font-size) - 3px);
 						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width:450px) and (max-width:479.98px) and (orientation: portrait) {
+	body {
+		.wrapper {
+			.loader-wrapper {
+				.loader {
+					p {
+						font-size: 28px;
 					}
 				}
 			}
