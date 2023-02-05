@@ -306,3 +306,11 @@ $(".contact-link").click(function () {
 	$(".about-link").removeClass("active");
 	$(".contact-link").addClass("active");
 });
+
+xhr = new XMLHttpRequest();
+xhr.open("GET", url, true);
+
+xhr.onloadend = function () {
+	if (xhr.status == 404)
+		throw new Error(url + " replied 404");
+}

@@ -60,7 +60,7 @@ $lightBgColor: #9B9B9B;
 						}
 					}
 
-					input:checked~ul {
+					input:checked~div {
 						transform: scale(1.0, 1.0);
 						opacity: 1;
 					}
