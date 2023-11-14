@@ -44,12 +44,15 @@
 	},
 	"dependencies": {
 		"@supegui/hsl-to-hex": "^1.0.2",
-		"gsap": "^3.11.3",
+		"gsap": "^3.12.2",
 		"gulp-cli": "^2.3.0",
 		"gulp-if": "^3.0.0",
 		"gulp-svg-sprite": "^2.0.1",
 		"jquery": "^3.6.1",
 		"openssl-nodejs": "^1.0.5",
-		"swiper": "^8.4.5"
+		"panolens": "^0.12.1",
+		"swiper": "^8.4.5",
+		"terser-webpack-plugin": "^5.3.9",
+		"three": "^0.158.0"
 	}
 }
