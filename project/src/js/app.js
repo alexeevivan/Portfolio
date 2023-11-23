@@ -67,7 +67,7 @@ $.get("../html/loader.html", function (data) {
 });
 
 $(window).on('load', function () {
-	setTimeout(removeLoader, 2500); //wait for page load PLUS two & a half seconds.
+	setTimeout(removeLoader, 500); //wait for page load PLUS two & a half seconds.
 });
 function removeLoader() {
 	$(".loader-wrapper").fadeOut(500, function () {
