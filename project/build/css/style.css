@@ -2994,6 +2994,14 @@ header .header__right-side .linkedin:hover {
   content: "✔";
 }
 
+.wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__synopsis-block .project__description ul li a {
+  color: var(--light);
+  font-size: calc(var(--font-size) * 0.875);
+  line-height: 18px;
+  font-weight: 300;
+  list-style: none;
+}
+
 .wrapper .projects .projects__container .projects-slider .projects-slider__wrapper .projects-slider__slide .project__items .project__right-side .project__link-block {
   width: 30%;
   display: -webkit-box;

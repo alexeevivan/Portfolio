@@ -1024,6 +1024,14 @@ header {
 												&::before {
 													content: "\2714";
 												}
+
+												a {
+													color: var(--light);
+													font-size: calc(var(--font-size) * 0.875);
+													line-height: 18px;
+													font-weight: 300;
+													list-style: none;
+												}
 											}
 										}
 									}
